@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escrow Payment - igurd</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="innerPagesCSS/join-as-a-partner.css">
+</head>
+<body>
+    <header class="innerNav d-flex align-items-center bg-white flex-wrap">
+        <div class="container">
+            <nav class="d-flex justify-content-between align-items-center">
+                <div>
+                    <a href="#"><img class="logo" src="../images/innerLogo.png" alt="iGurd Logo"></a>
+                </div>
+                <div class="right-nav">
+                    <ul class="d-flex d-block justify-content-between align-items-center">
+                        <li class="single-tab active"><img src="../images/home.png" alt=""></li>
+                        <li class="single-tab "><img src="../images/notification.png" alt=""></li>
+                        <li class="single-tab "><img src="../images/hamburger-bars.png" alt=""></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-area">
+        <div class="container">
+            <div class="row justify-content-around">
+                <div class="col-12 col-lg-6 left-side my-4">
+                    <div class="left-text bg-white p-4">
+                        <h2 class="text-center title p-2 d-flex justify-content-center align-items-center" id="welcome-message">Welcome to <img class="logo px-3" src="../images/innerLogo.png" alt=""></h2>
+                        <div class="invitation-message text-center p-3">
+                            <p>You got a invitation to escrow payment from <span class="sender-name" id="sender-name">Md Shahoreyer M.</span></p>
+                        </div>
+                        <div class="transaction-details d-flex justify-content-between">
+                            <small class="transaction-code">Transaction code: <span id="transaction-id">061616IGP</span></small>
+                            <small class="transaction-date">09 July 2020</small>
+                        </div>
+                        <div class="escrow-details">
+                            <div class="escrow-title-area py-4">
+                                <h6>Escrow payment for</h6>
+                                <div class="escrow-title d-flex justify-content-between align-items-center">
+                                    <h4>Escrow title</h4>
+                                    <a class="escrow-image" id="escrow-img" href="#">View image</a>
+                                </div>
+                            </div>
+                            <div class="escrow-body-area">
+                                <div class="escrow-body-amount d-flex justify-content-between">
+                                    <p class="escrow-amount grey-text">Amount:</p>
+                                    <span id="escrow-amount" class="black-text">100.00 BDT</span>
+                                </div>
+                                <div class="escrow-body-buyer-fees d-flex justify-content-between">
+                                    <p class="escrow-buyer-fees grey-text">Buyer fees:</p>
+                                    <span id="escrow-buyer-value" class="black-text">50.00 BDT</span>
+                                </div>
+                                <div class="escrow-body-invited-by d-flex justify-content-between">
+                                    <p class="escrow-invited-by grey-text">Invited by:</p>
+                                    <span id="escrow-invited-by-value" class="black-text">Md. Shahoreyer H.</span>
+                                </div>
+                                <div class="escrow-body-your-fees d-flex justify-content-between">
+                                    <p class="escrow-your-fees grey-text">Your fees:</p>
+                                    <span id="escrow-your-fees-value" class="black-text">50.00 BDT</span>
+                                </div>
+                                <div class="escrow-body-you-pay d-flex justify-content-between">
+                                    <p class="escrow-you-pay grey-text">You pay:</p>
+                                    <span id="escrow-you-pay-value" class="black-text">50.00 BDT</span>
+                                </div>
+                                <small>Fees: for companies excl. VAT.</small>
+                            </div>
+                            <div class="escrow-btns text-center">
+                                
+                                <button type="button" class="accept-btn" data-toggle="modal" data-target="#modalLoginForm">Accept and Pay</button>
+                                <div class="escrow-negetive-btns d-flex justify-content-around">
+                                    <a href="#" class="later-btn">Maybe later</a>
+                                    <a href="#" class="dont-accept-btn">Don't accept</a>
+                                </div>
+                            </div>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                            aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header text-center">
+                                            <h4 class="modal-title w-100">Login</h4>
+                                            <button type="button" class="close d-flex align-items-center" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true"><img class="w-50" src="../images/close-btn.png" alt=""></span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body mx-3">
+                                            <div class="md-form">
+                                                <input type="email" id="defaultForm-email" class="form-control" placeholder="EMAIL/PHONE NO">
+                                            </div>
+
+                                            <div class="md-form mb-4">
+                                                <input type="password" id="defaultForm-pass" class="form-control" placeholder="PASSWORD">
+                                            </div>
+
+                                        </div>
+                                        <div class="modal-footer d-flex justify-content-center">
+                                            <button class="btn btn-default">Login</button>
+                                            
+                                        </div>
+                                        <div class="extra-btns text-center">
+                                            <a href="#">Create a New Account</a><small> | </small><a href="#">Forgot Password</a>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 right-side my-4">
+                    <div class="right-text bg-white p-4">
+                        <h2 class="text-center title p-2 d-flex justify-content-center align-items-center">Here’s how it works</h2>
+                        <div class="work-processes">
+                            <div class="single-process process-1">
+                                <div class="process-img">
+                                    <img class="circle-rounded"  src="../images/process-1.png" alt="">
+                                </div>
+                                <div class="process-body">
+                                    <p>Buyer & Seller agree trams and Buyer submits payment.</p>
+                                </div>
+                            </div>
+                            <div class="single-process process-2">
+                                <div class="process-img">
+                                    <img class="circle-rounded" src="../images/process-2.png" alt="">
+                                </div>
+                                <div class="process-body">
+                                    <p>Seller delivers physical or digital goods or services to buyer.</p>
+                                </div>
+                            </div>
+                            <div class="single-process process-3">
+                                <div class="process-img">
+                                    <img class="circle-rounded"  src="../images/process-3.png" alt="">
+                                </div>
+                                <div class="process-body">
+                                    <p>Buyer approves that digital or physical goods or service.</p>
+                                </div>
+                            </div>
+                            <div class="single-process process-4 d-flex justify-content-between align-items-center">
+                                <div class="process-img">
+                                    <img class="circle-rounded"  src="../images/process-4.png" alt="">
+                                </div>
+                                <div class="process-body">
+                                    <p>Money is released to seller dashboard and he can make a payout request.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="process-footer text-center">
+                            <p>You can find more information about our service at iGurd.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <footer>
+            <div class="container">
+                <div class="footer-list text-center">
+                    <ul>
+                        <li class="p-1 p-md-0 px-md-3"><a href="#">FAQ</a></li>
+                        <li class="p-1 p-md-0 px-md-3"><a href="#">Terms</a></li>
+                        <li class="p-1 p-md-0 px-md-3"><a href="#">Privacy</a></li>
+                        <li class="p-1 p-md-0 px-md-3"><a href="#">Impant</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

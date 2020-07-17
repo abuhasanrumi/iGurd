@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: #000000 ;
+    font-family: 'Montserrat';
+    font-size: 16px;
+}
+a:hover {
+    text-decoration: none;
+}
+ul {
+    margin:0;
+    padding: 0;
+}
+@media (min-width: 1200px) {
+    .container{
+        max-width: 970px;
+    }
+}
+
+/* Nav Section Starts Here */
+
+
+.innerNav {
+    height: 60px;
+}
+.logo {
+    height: 40px;
+}
+li.single-tab {
+    padding: 15px 20px;
+    border-bottom: 2px solid #fff;
+    transition: .3s ease-in-out;
+}
+li.single-tab.active {
+    padding: 15px 20px;
+    border-bottom: 2px solid #002B49;
+}
+li.single-tab img {
+    height: 25px;
+}
+li.single-tab:hover {
+    padding: 15px 20px;
+    border-bottom: 2px solid #002B49;
+}
+.right-nav ul li {
+    cursor: pointer;
+}
+
+
+/* Main section */
+
+main.main-area {
+    background: url("../../images/join-as-partner-bg.png"); 
+    background-color: #E8EAEE; 
+    height: 100%; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+  }
+
+h2.title {
+    font-size: 22px;
+    font-weight: 600;
+}
+.left-text, .right-text {
+    border-radius: 10px;
+}
+.invitation-message{
+    border: 2px solid #1D2E5C;
+    border-radius: 10px;
+}
+.invitation-message p {
+    margin: 0;
+    padding: 0;
+    color: #293250;
+    font-weight: 600;
+}
+
+span#sender-name {
+    font-size: 18px;
+    color: #293250;
+    font-weight: 600;
+}
+
+small, #transaction-id {
+    font-size: 14px;
+    font-weight: 500;
+    color: #666666;
+}
+
+.escrow-title-area h6 {
+    color: #666666;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.escrow-title h4 {
+    font-weight: 600;
+    font-size: 20px;
+    margin: 0;
+}
+.escrow-title a {
+    color: #293250;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.grey-text {
+    font-size: 16px;
+    font-weight: 500;
+    color: #666666;
+}
+.black-text {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.escrow-buyer-fees, .escrow-invited-by, .escrow-your-fees {
+    margin: 0;
+    font-size: 14px;
+}
+.escrow-body-you-pay {
+    padding-top: 1rem;
+}
+
+.escrow-you-pay {
+    margin: 0;
+}
+
+.accept-btn {
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    background: #293250;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #293250;
+    transition: .3s ease-in-out;
+}
+.escrow-btns {
+    padding-top: 25px;
+}
+.accept-btn:focus, .accept-btn:active {
+    outline: none;
+}
+
+.accept-btn:hover {
+    background: RGBA(41,50,80,.95);
+}
+.escrow-negetive-btns a {
+    font-size: 18px;
+    font-weight: 600;
+    color: #293250;
+    padding: 10px 0;
+    display: inline-block;
+}
+.process-img img {
+    width: 70px;
+    padding: 15px;
+}
+
+.process-img {
+    border: 1px solid #231F20;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.single-process {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 0;
+}
+
+.process-body p {
+    padding-left: 20px;
+    margin: 0;
+    color: #7F8496;
+}
+.process-footer p {
+    padding: 15px;
+    padding-bottom: 0;
+}
+
+.footer-list ul li a {
+    color: #000000;
+    font-weight: 500;
+}
+.footer-list ul li {
+    display: inline-block;
+}
+
+.footer-list ul {
+    margin: 0px 30px;
+    border-top: 1px solid #002B49;
+    padding: 25px 0;
+}
+
+
+
+
+/* Popup Login Modal  */
+
+button.close {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+h4.modal-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #898989;
+}
+.modal-content {
+    width: 315px;
+    margin: 0 auto;
+    border-radius: 0;
+    border: none;
+}
+
+button.close img:active, button.close img:focus {
+    outline: none;
+}
+.modal-header {
+    border-bottom: 1px solid #E1E1E1;
+    margin: 0px 85px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.form-control {
+    margin: 25px 0;
+    text-align:center;
+    border: 1px solid #99AAB6;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    outline: none;
+}
+.modal-footer {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding: .75rem;
+    border-top: none; 
+    border-bottom-right-radius: 0; 
+    border-bottom-left-radius: 0;
+}
+
+.modal-footer button.btn.btn-default {
+    width: 100%;
+    background: #002B49;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    border: 2px solid #002B49;
+}
+
+.modal-footer .btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0;
+}
+
+.modal-body {
+    padding-bottom: 0;
+}
+
+.modal-footer {
+    padding: 0 1rem;
+    margin: 0 1rem;
+}
+
+.extra-btns a {
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 400;
+    color: #505050;
+}
+
+.extra-btns {
+    padding-bottom: 1.2rem;
+
+}

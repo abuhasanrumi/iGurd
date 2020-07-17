@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Title -->
+  <title>Hello, world!</title>
+
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet">
+
+  <!-- CSS Blueberry Template -->
+  <link rel="stylesheet" href="../css/theme.css">
+</head>
+<body>
+  <!-- Unfold (Dropdown) -->
+<div class="hs-unfold">
+    <a class="js-hs-unfold-invoker  dropdown-toggle" href="javascript:;"
+       data-hs-unfold-options='{
+         "target": "#dropdownWithHref"
+       }'>Dropdown link</a>
+  
+    <div id="dropdownWithHref" class="hs-unfold-content dropdown-menu">
+      <a class="dropdown-item active" href="#">One</a>
+      <a class="dropdown-item" href="#">Two</a>
+      <a class="dropdown-item" href="#">Three</a>
+    </div>
+  </div>
+
+  <!-- Unfold (Sidebar) -->
+<div class="hs-unfold">
+    <a class="js-hs-unfold-invoker btn btn-sm btn-secondary" href="javascript:;"
+       data-hs-unfold-options='{
+        "target": "#sidebarContent",
+        "type": "css-animation",
+        "animationIn": "fadeInRight",
+        "animationOut": "fadeOutRight",
+        "hasOverlay": "rgba(55, 125, 255, 0.1)",
+        "smartPositionOff": true
+       }'>Sidebar Toggler</a>
+  </div>
+  <!-- End Unfold (Sidebar) -->
+  
+  <!-- Sidebar Navigation -->
+  <aside id="sidebarContent" class="hs-unfold-content sidebar">
+    <div class="sidebar-scroller">
+      <div class="sidebar-container">
+        <div class="sidebar-footer-offset" style="padding-bottom: 7rem;">
+          <!-- Toggle Button -->
+          <div class="d-flex justify-content-end align-items-center pt-4 px-4">
+            <div class="hs-unfold">
+              <a class="js-hs-unfold-invoker btn btn-icon btn-xs btn-soft-secondary" href="javascript:;"
+                 data-hs-unfold-options='{
+                  "target": "#sidebarContent",
+                  "type": "css-animation",
+                  "animationIn": "fadeInRight",
+                  "animationOut": "fadeOutRight",
+                  "hasOverlay": "rgba(55, 125, 255, 0.1)",
+                  "smartPositionOff": true
+                 }'>
+                <svg width="10" height="10" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="currentColor" d="M11.5,9.5l5-5c0.2-0.2,0.2-0.6-0.1-0.9l-1-1c-0.3-0.3-0.7-0.3-0.9-0.1l-5,5l-5-5C4.3,2.3,3.9,2.4,3.6,2.6l-1,1 C2.4,3.9,2.3,4.3,2.5,4.5l5,5l-5,5c-0.2,0.2-0.2,0.6,0.1,0.9l1,1c0.3,0.3,0.7,0.3,0.9,0.1l5-5l5,5c0.2,0.2,0.6,0.2,0.9-0.1l1-1 c0.3-0.3,0.3-0.7,0.1-0.9L11.5,9.5z"/>
+                </svg>
+               </a>
+            </div>
+          </div>
+          <!-- End Toggle Button -->
+  
+          <!-- Content -->
+          <div class="scrollbar sidebar-body">
+            <div class="sidebar-content py-4 px-7">
+              <h4 class="h5">Sidebar content</h4>
+              <p>This is where we sit down, grab a cup of coffee and dial in the details. Understanding the task at hand and ironing out the wrinkles is a key point.</p>
+            </div>
+          </div>
+          <!-- End Content -->
+        </div>
+  
+        <!-- Footer -->
+        <footer class="sidebar-footer border-top py-2 px-7">
+          <ul class="nav nav-sm">
+            <li class="nav-item">
+              <a class="nav-link pl-0" href="#">Privacy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Terms</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fas fa-info-circle la-lg"></i>
+              </a>
+            </li>
+          </ul>
+        </footer>
+        <!-- End Footer -->
+      </div>
+    </div>
+  </aside>
+  <!-- End Sidebar Navigation -->
+  <!-- End Unfold (Dropdown) -->
+
+  <!-- JS Global Compulsory -->
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/jquery-migrate.min.js"></script>
+  <script src="../js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Blueberry -->
+  <script src="../js/hs.core.js"></script>
+  <script src="../js/hs-unfold.min.js"></script>
+
+  <script>
+    $(document).on('ready', function () {
+      // initialization of unfold
+      var unfold = new HSUnfold('.js-hs-unfold-invoker').init();
+    });
+  </script>
+</body>
+</html>
