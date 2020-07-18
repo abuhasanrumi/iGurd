@@ -1,52 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    color: #000000 ;
-    font-family: 'Montserrat';
-    font-size: 16px;
-}
-a:hover {
-    text-decoration: none;
-}
-ul {
-    margin:0;
-    padding: 0;
-}
-@media (min-width: 1200px) {
-    .container{
-        max-width: 970px;
-    }
-}
 
-/* Nav Section Starts Here */
-
-
-.innerNav {
-    height: 60px;
-}
-.logo {
-    height: 40px;
-}
-li.single-tab {
-    padding: 15px 20px;
-    border-bottom: 2px solid #fff;
-    transition: .3s ease-in-out;
-}
-li.single-tab.active {
-    padding: 15px 20px;
-    border-bottom: 2px solid #002B49;
-}
-li.single-tab img {
-    height: 25px;
-}
-li.single-tab:hover {
-    padding: 15px 20px;
-    border-bottom: 2px solid #002B49;
-}
-.right-nav ul li {
-    cursor: pointer;
-}
 
 
 /* Main section */
@@ -65,11 +17,11 @@ h2.title {
     font-weight: 600;
 }
 .left-text, .right-text {
-    border-radius: 10px;
+    border-radius: 7px;
 }
 .invitation-message{
     border: 2px solid #1D2E5C;
-    border-radius: 10px;
+    border-radius: 7px;
 }
 .invitation-message p {
     margin: 0;
@@ -137,7 +89,7 @@ small, #transaction-id {
     color: #fff;
     width: 100%;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 7px;
     border: 1px solid #293250;
     transition: .3s ease-in-out;
 }
@@ -184,20 +136,6 @@ small, #transaction-id {
 .process-footer p {
     padding: 15px;
     padding-bottom: 0;
-}
-
-.footer-list ul li a {
-    color: #000000;
-    font-weight: 500;
-}
-.footer-list ul li {
-    display: inline-block;
-}
-
-.footer-list ul {
-    margin: 0px 30px;
-    border-top: 1px solid #002B49;
-    padding: 25px 0;
 }
 
 

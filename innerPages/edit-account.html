@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escrow Payment - igurd</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../innerPages/css/innerMaster.css">
+    <link rel="stylesheet" href="../innerPages/css/dashboard.css">
+</head>
+<body>
+    <header class="innerNav d-flex align-items-center bg-white flex-wrap">
+        <div class="container">
+            <nav class="d-flex justify-content-between align-items-center">
+                <div>
+                    <a href="#"><img class="logo" src="../images/innerLogo.png" alt="iGurd Logo"></a>
+                </div>
+                <div class="right-nav">
+                    <div class="nav-links d-flex d-block justify-content-between align-items-center">
+                        <a class="single-tab" href="#dropdownWithHref"><img src="../images/nav-icons/home.png" alt=""></a>
+                        <!-- Unfold (Dropdown) -->
+                        <div class="hs-unfold">
+                            <a class="js-hs-unfold-invoker dropdown-toggle single-tab" href="javascript:;"
+                            data-hs-unfold-options='{
+                                "target": "#dropdownWithHref",
+                                "type": "css-animation",
+                                "animationIn": "fadeInUp",
+                                "animationOut": "fadeOutDown",
+                                "hasOverlay": "rgba(0,0,0,.1)",
+                                "smartPositionOff": true
+                            }'><img src="../images/nav-icons/notification.png" alt=""></a>
+                        
+                            <div id="dropdownWithHref" class="hs-unfold-content dropdown-menu notification-area">
+                                <div class="single-notice-wrap">
+                                    <div class="single-notification-area dropdown-item" id="single-notification">
+                                        <img src="../images/nav-icons/user.png" alt="">
+                                        <div class="notification-text">
+                                            <p ><a href="#" id="user-profile">Md. Shahoreyer M.</a> invited you to join <a href="#" id="escrow-link">Test</a> escrow payment</p>
+                                            <small id="notification-time"><span id="notification-exact-time">1 hr</span> ago</small>
+                                        </div>
+                                    </div>
+                                    <div class="single-notification-area dropdown-item" id="single-notification">
+                                        <img src="../images/nav-icons/user.png" alt="">
+                                        <div class="notification-text">
+                                            <p ><a href="#" id="user-profile">Md. Shahoreyer M.</a> invited you to join <a href="#" id="escrow-link">Test</a> escrow payment</p>
+                                            <small id="notification-time"><span id="notification-exact-time">1 hr</span> ago</small>
+                                        </div>
+                                    </div>
+                                    <div class="single-notification-area system-notice dropdown-item" id="single-notification">
+                                        <img src="../images/nav-icons/system.png" alt="">
+                                        <div class="notification-text">
+                                            <p >System invited you to pay the escrow payment</p>
+                                            <small id="notification-time"><span id="notification-exact-time">1 hr</span> ago</small>
+                                        </div>
+                                    </div>
+                                    <div class="single-notification-area dropdown-item" id="single-notification">
+                                        <img src="../images/nav-icons/user.png" alt="">
+                                        <div class="notification-text">
+                                            <p ><a href="#" id="user-profile">Md. Shahoreyer M.</a> invited you to join <a href="#" id="escrow-link">Test</a> escrow payment</p>
+                                            <small id="notification-time"><span id="notification-exact-time">1 hr</span> ago</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Unfold (Dropdown) -->
+                        
+                        <!-- Unfold (Sidebar) -->
+                        <div class="hs-unfold">
+                            <a class="single-tab js-hs-unfold-invoker  active" href="javascript:;"
+                            data-hs-unfold-options='{
+                                "target": "#sidebarContent",
+                                "type": "css-animation",
+                                "animationIn": "fadeInRight",
+                                "animationOut": "fadeOutRight",
+                                "hasOverlay": "rgba(0,0,0,.1)",
+                                "smartPositionOff": true
+                            }'><img src="../images/nav-icons/hamburger-bars.png" alt=""></a>
+                        </div>
+                        <!-- End Unfold (Sidebar) -->
+                    </div>
+                        
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <main>
+        <div class="container">
+            <div class="section-wrapper py-5">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 class="edit-account-title">Personal Information</h3>
+                        <div class="left-side-wrapper bg-white">
+                            <div class="phone-area single-profile-area">
+                                <h4>Phone Number</h4>
+                                <p class="phone-number" id="phone-number">
+                                    +880 131770 2323
+                                </p>
+                            </div>
+                            <div class="password-area single-profile-area">
+                                <h4>Password</h4>
+                                <a class="change-password" id="change-password" href="#" data-toggle="modal" data-target="#exampleModalCenter">Change Password</a>
+                            </div>
+                            <div class="name-area single-profile-area">
+                                <h4>Name</h4>
+                                <p class="user-full-name" id="user-full-name">Md Shahoreyer Mostofa</p>
+                            </div>
+                            <div class="user-personal-address-area single-profile-area">
+                                <h4>Personal Address</h4>
+                                <p class="user-personal-address" id="user-personal-address">Polashi Bhabon, Zahurul Nagor, Bogura.</p>
+                            </div>
+                            <div class="account-deletation-area single-profile-area">
+                                <h4>Delete My Account</h4>
+                                <a class="delete-account" id="delete-account" href="#">Delete Account</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="edit-account-title">Verification</h3>
+                        <div class="right-side-wrapper bg-white">
+                            <div class="identity-proof-area single-profile-area">
+                                <div class="file-upload-area">
+                                    <div class="file-upload-text">
+                                        <h4>Proof of Identity</h4>
+                                        <small>Please upload a valid photo ID</small>
+                                    </div>
+                                    <label class="btn">
+                                        Upload <input type="file" hidden>
+                                    </label>
+                                </div>
+                                <p class="file-upload-notice">
+                                    You can use NID, Birth certificate or Passport for verify your account. Your document can not be viewed by iGurd. It will automatic verify using Election commetion Bangladesh
+                                </p>
+                            </div>
+                        </div>
+                        
+
+                        <div class="right-bottom py-5 d-block py-lg-7">
+                            <h3 class="edit-account-title">Security</h3>
+                            <div class="right-side-wrapper bg-white ">
+                                <div class="security-area single-profile-area">
+                                    <h4>Logged-in Devices</h4>
+                                    <p class="logged-in-device" id="logged-in-device">
+                                        Bendu-PC-5516
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="container">
+            <div class="footer-list text-center">
+                <ul>
+                    <li class="p-1 p-md-0 px-md-3"><a href="#">FAQ</a></li>
+                    <li class="p-1 p-md-0 px-md-3"><a href="#">Terms</a></li>
+                    <li class="p-1 p-md-0 px-md-3"><a href="#">Privacy</a></li>
+                    <li class="p-1 p-md-0 px-md-3"><a href="#">Impant</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+    
+  
+
+    <!-- ======== Sidebar Navigation Content Starts Here ======== -->
+    <aside id="sidebarContent" class="hs-unfold-content sidebar">
+        <div class="sidebar-scroller">
+        <div class="sidebar-container">
+            <div class="sidebar-footer-offset" style="padding-bottom: 7rem;">
+            <!-- Toggle Button -->
+            <div class="d-flex justify-content-end align-items-center ">
+                <div class="hs-unfold">
+                </div>
+            </div>
+            <!-- End Toggle Button -->
+    
+            <!-- Content -->
+            <div class="scrollbar sidebar-body">
+                <div class="sidebar-content">
+                    <div class="side-nav-w-icons  p-4">
+                        <div class="side-dashboard d-flex align-items-center p-2">
+                            <img class="" src="../images/nav-icons/home.png" alt="">
+                            <a href="#">Dashboard</a>
+                        </div>
+                        <div class="side-profile d-flex align-items-center  p-2">
+                            <img class="" src="../images/nav-icons/profile.png" alt="">
+                            <a href="#">Profile</a>
+                        </div>
+                        <div class="side-wallet d-flex align-items-center p-2">
+                            <img class="" src="../images/nav-icons/wallet.png" alt="">
+                            <span class="side-wallet-text d-block">
+                                <a href="#">Wallet</a>
+                                <small class="d-block">Your balance <span id="side-wallet-balance">0.00</span> BDT</small>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="side-escrow-section p-4">
+                        <a href="#"> Create escrow payment</a>
+                        <a href="#"> Create deposit payment</a>
+                    </div>
+                    <div class="side-other-menu p-4">
+                        <a href="#">Help & FAQ</a>
+                        <a href="#">Contact support</a>
+                        <a href="#">About us</a>
+                    </div>
+                    <div class="log-out-sec d-flex justify-content-center px-3">
+                        <a href="#" class="log-out-btn d-flex align-items-center justify-content-center">
+                            <img src="../images/nav-icons/log-out.png" alt="">
+                            <p class="m-0  text-white">Log Out</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- End Content -->
+            </div>
+        </div>
+        </div>
+    </aside>
+    <!-- ======== Sidebar Navigation Content Ends Here ======== -->
+
+
+
+
+    <!-- ======== Change Password Button Modal Starts ======= -->
+    <div id="exampleModalCenter" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="ChangePassModalTitle">Modal title</h5>
+              <button type="button" class="btn btn-xs btn-icon btn-soft-secondary" data-dismiss="modal" aria-label="Close">
+                <svg aria-hidden="true" width="10" height="10" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="currentColor" d="M11.5,9.5l5-5c0.2-0.2,0.2-0.6-0.1-0.9l-1-1c-0.3-0.3-0.7-0.3-0.9-0.1l-5,5l-5-5C4.3,2.3,3.9,2.4,3.6,2.6l-1,1 C2.4,3.9,2.3,4.3,2.5,4.5l5,5l-5,5c-0.2,0.2-0.2,0.6,0.1,0.9l1,1c0.3,0.3,0.7,0.3,0.9,0.1l5-5l5,5c0.2,0.2,0.6,0.2,0.9-0.1l1-1 c0.3-0.3,0.3-0.7,0.1-0.9L11.5,9.5z"/>
+                </svg>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- ======== Change Password Button Modal Ends ======= -->
+
+
+
+
+      <!-- JS Global Compulsory -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/hs.core.js"></script>
+    <script src="js/hs-unfold.min.js"></script>
+    <script>
+        $(document).on('ready', function () {
+          // initialization of unfold
+          var unfold = new HSUnfold('.js-hs-unfold-invoker').init();
+        });
+    </script>
+</body>
+</html>

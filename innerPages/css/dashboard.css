@@ -1,0 +1,159 @@
+main {
+    background: #F5F5F5;
+    min-height: 600px;
+}
+
+
+footer  {
+    background: rgb(245, 245, 245);
+}
+
+/* ======== Main Dashboard Page Starts Here ========= */
+.card-image {
+    width: 95px;
+    margin: 0 auto;
+}
+.card-title {
+    color: #000000;
+}
+.single-dashboard-card {
+    padding: 15px 0;
+}
+
+.user-name-dashboard {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+.card-text {
+    font-size: 15px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.card-title {
+    color: #000000;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.card-body {
+    padding-bottom: .75rem;
+}
+.card-footer {
+    padding: 0 15px;
+    border-top: none;
+    
+}
+.card-footer a {
+    font-weight: 600;
+    font-size: 18px;
+    background: #002B49;
+    color: #fff;
+    width: 100%;
+    display: block;
+    border-radius: 7px;
+    padding: 8px 0;
+}
+.escrow-area-title h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0rem;
+}
+
+.single-ongoing-escrow {
+    display: flex;
+    background: #fff;
+    padding: 15px;
+    border-radius: 7px;
+    margin: 15px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+.escrow-creation-time, .escrow-creation-time span {
+    font-size: 14px;
+}
+
+.escrow-amount {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* ======== Main Dashboard Page Ends Here ========= */
+
+
+
+
+
+/* ======== Edit Account Page Starts Here =========  */
+
+
+h3.edit-account-title {
+    font-size: 16px;
+    font-weight: 400;
+}
+.single-profile-area h4 {
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #808080;
+    letter-spacing: .75px;
+    margin-bottom: 0.25rem;
+}
+.single-profile-area p, .single-profile-area a {
+    color: #293250;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+.left-side-wrapper, .right-side-wrapper {
+    border-radius: 7px;
+    padding: 10px 0;
+}
+
+.single-profile-area {
+    padding: 20px 30px;
+    border-bottom: 2px solid #D9D9D9;
+}
+.account-deletation-area.single-profile-area {
+    border: none;
+}
+a.delete-account {
+    color: #FF0000;
+}
+.file-upload-area label.btn {
+    background: #002B49;
+    color: #fff;
+    padding: 10px 25px;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.file-upload-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.identity-proof-area.single-profile-area {
+    border-bottom: none;
+}
+p.file-upload-notice {
+    font-size: 12px;
+    font-weight: 400;
+    color: #000;
+    padding: 20px 0;
+}
+.security-area.single-profile-area {
+    overflow: hidden;
+    border: none;
+    min-height: 175px;
+}
+
+.modal-title {
+    margin: 0 auto;
+}
+/* ======== Edit Account Page Ends Here =========  */

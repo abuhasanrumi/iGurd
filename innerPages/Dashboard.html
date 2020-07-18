@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escrow Payment - igurd</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../innerPages/css/innerMaster.css">
+    <link rel="stylesheet" href="../innerPages/css/dashboard.css">
+</head>
+<body>
+    <header class="innerNav d-flex align-items-center bg-white flex-wrap">
+        <div class="container">
+            <nav class="d-flex justify-content-between align-items-center">
+                <div>
+                    <a href="#"><img class="logo" src="../images/innerLogo.png" alt="iGurd Logo"></a>
+                </div>
+                <div class="right-nav">
+                    <div class="nav-links d-flex d-block justify-content-between align-items-center">
+                        <a class="single-tab " href="#dropdownWithHref"><img src="../images/nav-icons/home.png" alt=""></a>
+                        <!-- Unfold (Dropdown) -->
+                        <div class="hs-unfold">
+                            <a class="js-hs-unfold-invoker dropdown-toggle single-tab" href="javascript:;"
+                            data-hs-unfold-options='{
+                                "target": "#dropdownWithHref",
+                                "type": "css-animation",
+                                "animationIn": "fadeInUp",
+                                "animationOut": "fadeOutDown",
+                                "hasOverlay": "rgba(0,0,0,.1)",
+                                "smartPositionOff": true
+                            }'><img src="../images/nav-icons/notification.png" alt=""></a>
+                        
+                            <div id="dropdownWithHref" class="hs-unfold-content dropdown-menu notification-area">
+                                <div class="single-notice-wrap">
+                                    <div class="single-notification-area dropdown-item" id="single-notification">
+                                        <img src="../images/nav-icons/user.png" alt="">
+                                        <div class="notification-text">
+                                            <p ><a href="#" id="user-profile">Md. Shahoreyer M.</a> invited you to join <a href="#" id="escrow-link">Test</a> escrow payment</p>
+                                            <small id="notification-time"><span id="notification-exact-time">1 hr</span> ago</small>
+                                        </div>
+                                    </div>
+                                    <div class="single-notification-area dropdown-item" id="single-notification">
+                                        <img src="../images/nav-icons/user.png" alt="">
+                                        <div class="notification-text">
+                                            <p ><a href="#" id="user-profile">Md. Shahoreyer M.</a> invited you to join <a href="#" id="escrow-link">Test</a> escrow payment</p>
+                                            <small id="notification-time"><span id="notification-exact-time">1 hr</span> ago</small>
+                                        </div>
+                                    </div>
+                                    <div class="single-notification-area system-notice dropdown-item" id="single-notification">
+                                        <img src="../images/nav-icons/system.png" alt="">
+                                        <div class="notification-text">
+                                            <p >System invited you to pay the escrow payment</p>
+                                            <small id="notification-time"><span id="notification-exact-time">1 hr</span> ago</small>
+                                        </div>
+                                    </div>
+                                    <div class="single-notification-area dropdown-item" id="single-notification">
+                                        <img src="../images/nav-icons/user.png" alt="">
+                                        <div class="notification-text">
+                                            <p ><a href="#" id="user-profile">Md. Shahoreyer M.</a> invited you to join <a href="#" id="escrow-link">Test</a> escrow payment</p>
+                                            <small id="notification-time"><span id="notification-exact-time">1 hr</span> ago</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Unfold (Dropdown) -->
+                        
+                        <!-- Unfold (Sidebar) -->
+                        <div class="hs-unfold">
+                            <a class="single-tab js-hs-unfold-invoker  active" href="javascript:;"
+                            data-hs-unfold-options='{
+                                "target": "#sidebarContent",
+                                "type": "css-animation",
+                                "animationIn": "fadeInRight",
+                                "animationOut": "fadeOutRight",
+                                "hasOverlay": "rgba(0,0,0,.1)",
+                                "smartPositionOff": true
+                            }'><img src="../images/nav-icons/hamburger-bars.png" alt=""></a>
+                        </div>
+                        <!-- End Unfold (Sidebar) -->
+                    </div>
+                        
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <main>
+        <div class="container">
+            <div class="dashboard-cards-area text-center pt-4 pb-4 pb-lg-0">
+                <div class="row">
+                    <div class="col-md-4 my-4 my-md-0">
+                        <div class="card single-dashboard-card">
+                            <img class="card-img-top card-image mt-3" src="../images/dashboard/user.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title user-name-dashboard" id="user-name-dashboard">Abu Hasan Rumi</h5>
+                                <p class="card-text user-phone" id="user-phone">+8801317702424</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="edit-account.html">Edit Account</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 my-4 my-md-0">
+                        <div class="card single-dashboard-card">
+                            <img class="card-img-top card-image mt-3" src="../images/dashboard/escrow.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Create escrow payment</h5>
+                                <p class="card-text">Send or reveive money securely</p>
+                            </div>
+                                <!-- <div class="card-footer">
+                                    <a href="#">Create Escrow</a>
+                                </div> -->
+                        </div>
+                    </div>
+                    <div class="col-md-4 my-4 my-md-0">
+                        <div class="card single-dashboard-card">
+                            <img class="card-img-top card-image mt-3" src="../images/dashboard/deposit.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Create deposit payment</h5>
+                                <p class="card-text">Send deposit or receive deposits</p>
+                            </div>
+                            <!-- <div class="card-footer">
+                                    <a href="#">Send Deposit</a>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <section class="ongoing-escrow-area">
+            <div class="container escrow-area-wrap">
+                <div class="row">
+                    <div class="col-12 offset-md-4 col-md-8">
+                        <div class="escrow-area-title">
+                            <h4>Ongoing escrow payments</h4>
+                            <div class="single-ongoing-escrow">
+                                <div class="escrow-text-left">
+                                    <h4 class="escrow-title" id="escrow-title">Your first escrow payment</h4>
+                                    <p class="escrow-creation-time m-0" id="escrow-creation-time">You created this escrow <span>30 minutes</span> ago</p>
+                                </div>
+                                <div class="escrow-text-right">
+                                    <p class="escrow-amount m-0" id="escrow-amount">100.00 BDT</p>
+                                </div>
+                            </div>
+                            <div class="single-ongoing-escrow">
+                                <div class="escrow-text-left">
+                                    <h4 class="escrow-title" id="escrow-title">Your first escrow payment</h4>
+                                    <p class="escrow-creation-time m-0" id="escrow-creation-time">You created this escrow <span>30 minutes</span> ago</p>
+                                </div>
+                                <div class="escrow-text-right">
+                                    <p class="escrow-amount m-0" id="escrow-amount">100.00 BDT</p>
+                                </div>
+                            </div>
+                            <div class="single-ongoing-escrow no-escrow-available" id="no-escrow-available">
+                                <p class="m-0">No payments available</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <div class="container">
+            <div class="footer-list text-center">
+                <ul>
+                    <li class="p-1 p-md-0 px-md-3"><a href="#">FAQ</a></li>
+                    <li class="p-1 p-md-0 px-md-3"><a href="#">Terms</a></li>
+                    <li class="p-1 p-md-0 px-md-3"><a href="#">Privacy</a></li>
+                    <li class="p-1 p-md-0 px-md-3"><a href="#">Impant</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+     <!-- ======== Sidebar Navigation Content Starts Here ======== -->
+     <aside id="sidebarContent" class="hs-unfold-content sidebar">
+        <div class="sidebar-scroller">
+        <div class="sidebar-container">
+            <div class="sidebar-footer-offset" style="padding-bottom: 7rem;">
+            <!-- Toggle Button -->
+            <div class="d-flex justify-content-end align-items-center ">
+                <div class="hs-unfold">
+                </div>
+            </div>
+            <!-- End Toggle Button -->
+    
+            <!-- Content -->
+            <div class="scrollbar sidebar-body">
+                <div class="sidebar-content">
+                    <div class="side-nav-w-icons  p-4">
+                        <div class="side-dashboard d-flex align-items-center p-2">
+                            <img class="" src="../images/nav-icons/home.png" alt="">
+                            <a href="#">Dashboard</a>
+                        </div>
+                        <div class="side-profile d-flex align-items-center  p-2">
+                            <img class="" src="../images/nav-icons/profile.png" alt="">
+                            <a href="#">Profile</a>
+                        </div>
+                        <div class="side-wallet d-flex align-items-center p-2">
+                            <img class="" src="../images/nav-icons/wallet.png" alt="">
+                            <span class="side-wallet-text d-block">
+                                <a href="#">Wallet</a>
+                                <small class="d-block">Your balance <span id="side-wallet-balance">0.00</span> BDT</small>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="side-escrow-section p-4">
+                        <a href="#"> Create escrow payment</a>
+                        <a href="#"> Create deposit payment</a>
+                    </div>
+                    <div class="side-other-menu p-4">
+                        <a href="#">Help & FAQ</a>
+                        <a href="#">Contact support</a>
+                        <a href="#">About us</a>
+                    </div>
+                    <div class="log-out-sec d-flex justify-content-center px-3">
+                        <a href="#" class="log-out-btn d-flex align-items-center justify-content-center">
+                            <img src="../images/nav-icons/log-out.png" alt="">
+                            <p class="m-0  text-white">Log Out</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- End Content -->
+            </div>
+        </div>
+        </div>
+    </aside>
+    <!-- ======== Sidebar Navigation Content Ends Here ======== -->
+  
+
+
+      <!-- JS Global Compulsory -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/hs.core.js"></script>
+    <script src="js/hs-unfold.min.js"></script>
+    <script>
+        $(document).on('ready', function () {
+          // initialization of unfold
+          var unfold = new HSUnfold('.js-hs-unfold-invoker').init();
+        });
+    </script>
+</body>
+</html>
