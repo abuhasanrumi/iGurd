@@ -56,6 +56,9 @@ footer  {
     border-radius: 7px;
     padding: 8px 0;
 }
+.card-footer a:hover, .card-footer a:focus, .card-footer a:active {
+    background: RGBA(0,43,73,.9);
+}
 .escrow-area-title h4 {
     font-size: 16px;
     font-weight: 600;
@@ -133,6 +136,9 @@ a.delete-account {
     font-size: 16px;
     font-weight: 600;
     margin: 10px 0;
+}
+.file-upload-area a.btn:hover, .file-upload-area a.btn:focus, .file-upload-area a.btn:active {
+    background: RGBA(0,43,73,.9);
 }
 
 .file-upload-area {
@@ -219,12 +225,9 @@ p.file-upload-notice {
     padding: 0rem;
 }
 
-.account-verify-body, .verify-account-confirm-body {
-    padding-bottom: 0;
-}
 .account-verify-footer, .account-verify-confirmed-footer {
-    padding: 1rem 4rem;
-}    
+    padding: 0 4rem;
+} 
 .account-delete-confirmation p, .verify-account-confirmed p {
     font-weight: 500;
     font-size: 15px;
