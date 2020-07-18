@@ -79,6 +79,9 @@ footer  {
     font-size: 18px;
     font-weight: 600;
 }
+.escrow-area-section {
+    margin-bottom: 30px;
+}
 
 /* ======== Main Dashboard Page Ends Here ========= */
 
@@ -123,7 +126,7 @@ h3.edit-account-title {
 a.delete-account {
     color: #FF0000;
 }
-.file-upload-area label.btn {
+.file-upload-area a.btn {
     background: #002B49;
     color: #fff;
     padding: 10px 25px;
@@ -166,4 +169,70 @@ p.file-upload-notice {
     font-weight: 600;
     color: #002B49;
 }
+
+.modal-header {
+    padding: 1rem;
+    background: #E5E5E5;
+}
+.modal-header button img {
+    width: 18px;
+}
+.form-control {
+    border: 1px solid #002B49;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.modal-footer {
+    justify-content: center;
+    padding: 0 4rem;
+    border: none;
+    border-radius: 7px;
+}
+.modal-footer button{
+    width: 100%;
+    background: RGBA(0,43,73,1);
+}
+.modal-footer button:hover, .modal-footer button:focus, .modal-footer button:active{
+    background: RGBA(0,43,73,.9);
+    box-shadow: none;
+}
+.modal-dialog {
+    width: 450px;
+}
+.form-group label, .dropzone label {
+    font-size: 18px;
+}
+.password-changed-text {
+    font-size: 18px;
+}
+.new-password-instruction p {
+    padding: 15px;
+}
+.delete-account-text p, .account-delete-confirmation p {
+    font-size: 15px;
+}
+.account-delete-confirmation p {
+    font-weight: 500;
+}
+.dz-dropzone-boxed {
+    padding: 0rem;
+}
+
+.account-verify-body, .verify-account-confirm-body {
+    padding-bottom: 0;
+}
+.account-verify-footer, .account-verify-confirmed-footer {
+    padding: 1rem 4rem;
+}    
+.account-delete-confirmation p, .verify-account-confirmed p {
+    font-weight: 500;
+    font-size: 15px;
+    padding-bottom: 0;
+    display: block;
+}  
+.verify-account-instructions p {
+    font-size: 15px;
+}
+
 /* ======== Edit Account Page Ends Here =========  */

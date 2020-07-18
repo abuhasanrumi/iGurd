@@ -24,8 +24,9 @@ ul {
 h1, h2, h3, h4, h5, h6 {
     color: #000;
 }
-
-
+.modal-backdrop {
+    background-color: RGBA(6,8,8,.4);
+}
 
 /* Nav Section Starts Here */	
 .innerNav {	
@@ -114,9 +115,10 @@ a.single-tab:hover,a.single-tab:focus  {
 
 
 /* Sidebar Starts Here */	
-.hs-unfold-overlay {	
-    background-color: rgba(33, 50, 91, 0.125);	
-}	
+
+.hs-unfold-overlay {
+    background-color: RGBA(6,8,8,.4);
+}
 .sidebar {	
     top: 60px;	
     width: 17.6rem;	
@@ -155,12 +157,16 @@ header.innerNav {
     color: #fff;	
     border-radius: 7px;	
 }	
-/* Sidebar Ends Here */	
-/* Footer  */	
 .process-footer p {	
     padding: 15px;	
     padding-bottom: 0;	
 }	
+/* Sidebar Ends Here */	
+
+
+
+/* Footer  */	
+
 .footer-list ul li a {	
     color: #000000;	
     font-weight: 500;	
