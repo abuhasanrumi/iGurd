@@ -163,6 +163,9 @@ small, #transaction-id {
 .modal-dialog.modal-dialog-centered {
     width: 320px;
 }
+.modal.show .modal-dialog {
+    margin: 0 auto;
+}
 .modal-body {
     padding: 1.5rem 2.1rem;
     padding-bottom: 0;
