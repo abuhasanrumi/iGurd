@@ -10,7 +10,7 @@ footer  {
 
 /* ======== Main Dashboard Page Starts Here ========= */
 .card-image {
-    width: 95px;
+    max-width: 95px;
     margin: 0 auto;
 }
 .card-title {
@@ -162,7 +162,7 @@ p.file-upload-notice {
     min-height: 175px;
 }
 .modal-title-area img {
-    width: 19px;
+    max-width: 19px;
     margin: 0 10px;
     height: 25px;
 }
@@ -204,7 +204,7 @@ p.file-upload-notice {
     box-shadow: none;
 }
 .modal-dialog {
-    margin: 10px;
+    max-width: 450px;
 }
 
 .form-group label, .dropzone label {
