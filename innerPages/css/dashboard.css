@@ -152,8 +152,18 @@ p.file-upload-notice {
     border: none;
     min-height: 175px;
 }
-
-.modal-title {
+.modal-title-area img {
+    width: 19px;
+    margin: 0 10px;
+    height: 25px;
+}
+.modal-title-area {
+    display: flex;
     margin: 0 auto;
+}
+.modal-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #002B49;
 }
 /* ======== Edit Account Page Ends Here =========  */
