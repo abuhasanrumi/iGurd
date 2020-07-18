@@ -105,7 +105,7 @@
                             </div>
                             <div class="password-area single-profile-area">
                                 <h4>Password</h4>
-                                <a class="change-password" id="change-password" href="#" data-toggle="modal" data-target="#exampleModalCenter">Change Password</a>
+                                <a class="change-password" id="change-password" href="#" data-toggle="modal" data-target="#changePasswordModal">Change Password</a>
                             </div>
                             <div class="name-area single-profile-area">
                                 <h4>Name</h4>
@@ -117,11 +117,11 @@
                             </div>
                             <div class="account-deletation-area single-profile-area">
                                 <h4>Delete My Account</h4>
-                                <a class="delete-account" id="delete-account" href="#">Delete Account</a>
+                                <a class="delete-account" id="delete-account" href="#" data-toggle="modal" data-target="#deleteAccountModal">Delete Account</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 py-5 d-block py-md-0">
                         <h3 class="edit-account-title">Verification</h3>
                         <div class="right-side-wrapper bg-white">
                             <div class="identity-proof-area single-profile-area">
@@ -130,9 +130,7 @@
                                         <h4>Proof of Identity</h4>
                                         <small>Please upload a valid photo ID</small>
                                     </div>
-                                    <label class="btn">
-                                        Upload <input type="file" hidden>
-                                    </label>
+                                    <a class="btn verify-btn" href="#" id="verify-btn" href="#" data-toggle="modal" data-target="#verificationModal">Upload</a>
                                 </div>
                                 <p class="file-upload-notice">
                                     You can use NID, Birth certificate or Passport for verify your account. Your document can not be viewed by iGurd. It will automatic verify using Election commetion Bangladesh
@@ -195,11 +193,11 @@
                     <div class="side-nav-w-icons  p-4">
                         <div class="side-dashboard d-flex align-items-center p-2">
                             <img class="" src="../images/nav-icons/home.png" alt="">
-                            <a href="#">Dashboard</a>
+                            <a href="Dashboard.html">Dashboard</a>
                         </div>
                         <div class="side-profile d-flex align-items-center  p-2">
                             <img class="" src="../images/nav-icons/profile.png" alt="">
-                            <a href="#">Profile</a>
+                            <a href="edit-account.html">Profile</a>
                         </div>
                         <div class="side-wallet d-flex align-items-center p-2">
                             <img class="" src="../images/nav-icons/wallet.png" alt="">
@@ -237,32 +235,218 @@
 
 
     <!-- ======== Change Password Button Modal Starts ======= -->
-    <div id="exampleModalCenter" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div id="changePasswordModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-                <div class="modal-title-area">
-                    <img src="../images/dashboard/change-pass.png" alt="">
-                    <h5 class="modal-title" id="ChangePassModalTitle">Change Password</h5>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title-area">
+                        <img src="../images/dashboard/change-pass.png" alt="">
+                        <h5 class="modal-title" id="ChangePassModalTitle">Change Password</h5>
+                    </div>
+                <button type="button" class="btn btn-xs btn-icon" data-dismiss="modal" aria-label="Close">
+                    <img src="../images/dashboard/close.png" alt="">
+                </button>
                 </div>
-              <button type="button" class="btn btn-xs btn-icon btn-soft-secondary" data-dismiss="modal" aria-label="Close">
-                <svg aria-hidden="true" width="10" height="10" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
-                  <path fill="currentColor" d="M11.5,9.5l5-5c0.2-0.2,0.2-0.6-0.1-0.9l-1-1c-0.3-0.3-0.7-0.3-0.9-0.1l-5,5l-5-5C4.3,2.3,3.9,2.4,3.6,2.6l-1,1 C2.4,3.9,2.3,4.3,2.5,4.5l5,5l-5,5c-0.2,0.2-0.2,0.6,0.1,0.9l1,1c0.3,0.3,0.7,0.3,0.9,0.1l5-5l5,5c0.2,0.2,0.6,0.2,0.9-0.1l1-1 c0.3-0.3,0.3-0.7,0.1-0.9L11.5,9.5z"/>
-                </svg>
-              </button>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                        <label for="OldPassword">Old Password</label>
+                        <input type="password" class="form-control" id="OldPassword">
+                        </div>
+                        <div class="form-group">
+                            <label for="NewPassword">New Password</label>
+                            <input type="password" class="form-control" id="NewPassword">
+                        </div>
+                        <div class="form-group">
+                            <label for="ConfirmPassword">Confirm Password</label>
+                            <input type="password" class="form-control" id="ConfirmPassword">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn text-white change-password-submit" id="change-password" href="#" data-toggle="modal" data-target="#change-password-confirmed" data-dismiss="modal" data-toggle="modal" id="change-password" data-target="#ModalChangePassword">Submit</button>
+                        </div>
+                    </form> 
+                </div>
             </div>
-            <div class="modal-body">
-              <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-          </div>
         </div>
     </div>
     <!-- ======== Change Password Button Modal Ends ======= -->
 
+
+
+    <!-- ======== Change Password Confirmation Modal Starts ======= -->
+    <div id="change-password-confirmed" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title-area">
+                        <img src="../images/dashboard/change-pass.png" alt="">
+                        <h5 class="modal-title" id="ChangePassModalTitle">Change Password</h5>
+                    </div>
+                <button type="button" class="btn btn-xs btn-icon" data-dismiss="modal" aria-label="Close">
+                    <img src="../images/dashboard/close.png" alt="">
+                </button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="password-changed-text">
+                        <div class="password-change-notice">
+                            <p class="password-change-confirmation" id="password-change-confirmation">Your password changed successfully</p>
+                        </div>
+                        <div class="new-password-instruction">
+                            <p>Now you can login with your new password</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn text-white change-password-submit" id="change-password" href="#">Logout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ======== Change Password Confirmation Modal Ends ======= -->
+    
+
+
+    <!-- ======== Delete Account Modal Starts ======= -->
+    <div id="deleteAccountModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title-area">
+                        <img src="../images/dashboard/change-pass.png" alt="">
+                        <h5 class="modal-title" id="ChangePassModalTitle">Delete My Account</h5>
+                    </div>
+                <button type="button" class="btn btn-xs btn-icon" data-dismiss="modal" aria-label="Close">
+                    <img src="../images/dashboard/close.png" alt="">
+                </button>
+                </div>
+                <div class="modal-body">
+                    <div class="delete-account-text">
+                        <p>Deleting your account will remove all of your information from our database. This action cannot be undone.</p>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Deleting Reason</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="ConfirmPassword">Confirm Password</label>
+                            <input type="password" class="form-control" id="ConfirmPassword">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn text-white delete-account-submit" id="delete-account" href="#" data-toggle="modal" data-target="#delete-account-confirmed" data-dismiss="modal">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ======== Delete Account Modal Ends ======= -->
+
+
+
+    <!-- ======== Delete Account Modal Starts ======= -->
+    <div id="delete-account-confirmed" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content text-center">
+                <div class="modal-header">
+                    <div class="modal-title-area">
+                        <img src="../images/dashboard/change-pass.png" alt="">
+                        <h5 class="modal-title" id="ChangePassModalTitle">Delete My Account</h5>
+                    </div>
+                <button type="button" class="btn btn-xs btn-icon" data-dismiss="modal" aria-label="Close">
+                    <img src="../images/dashboard/close.png" alt="">
+                </button>
+                </div>
+                <div class="modal-body">
+                    <div class="delete-account-text">
+                        <div class="account-delete-confirmation"><p>Your account deletation request was submitted.</p></div>
+                        <div class="delete-account-instructions">
+                            <p>Our team will review your account history and transection history and delete your account.</p>
+                            <p>It can take 3 business days.</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn text-white delete-account-submit" id="delete-account" href="#">Logout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ======== Delete Account Modal Ends ======= -->
+
+
+    <!-- ======== Account Verification Modal Starts ======= -->
+    <div id="verificationModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title-area">
+                        <img src="../images/dashboard/change-pass.png" alt="">
+                        <h5 class="modal-title" id="AccountVerifyModalTitle">Verify Your Account</h5>
+                    </div>
+                <button type="button" class="btn btn-xs btn-icon" data-dismiss="modal" aria-label="Close">
+                    <img src="../images/dashboard/close.png" alt="">
+                </button>
+                </div>
+                <div class="modal-body account-verify-body">
+                    <div class="account-verify-text">
+                        <div class="account-delete-confirmation"><p class="m-0">You can use you National ID card, Birth certificate or Passport to verify your account. </p></div>
+                        <!-- Dropzone -->
+                        <div class="dropzone py-2">
+                            <label for="verificationDrop">Drop your file here</label>
+                            <div id="verificationDrop" class="js-dropzone dz-dropzone dz-dropzone-boxed gradient-overlay-half-primary-v4">
+                                
+                                <div class="dz-message pt-3">
+                                <figure class="max-w-10rem mx-auto mb-3">
+                                    <img class="img-fluid" src="../images/dashboard/dropzone.png" alt="Image Description">
+                                </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="ConfirmPassword">Confirm Password</label>
+                            <input type="password" class="form-control" id="ConfirmPassword">
+                        </div>
+                        <!-- End Dropzone -->
+                    </div>
+                    <div class="modal-footer account-verify-footer">
+                        <button type="button" class="btn text-white verificationModal-submit" id="verificationModal" href="#" data-toggle="modal" data-target="#verificationModalConfirmation" data-dismiss="modal">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ======== Account Verification Modal Ends ======= -->
+
+
+
+    <!-- ======== Account Verification Confirmation Starts ======= -->
+    <div id="verificationModalConfirmation" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title-area">
+                        <img src="../images/dashboard/change-pass.png" alt="">
+                        <h5 class="modal-title" id="AccountVerifyModalTitle">Verify Your Account</h5>
+                    </div>
+                <button type="button" class="btn btn-xs btn-icon" data-dismiss="modal" aria-label="Close">
+                    <img src="../images/dashboard/close.png" alt="">
+                </button>
+                </div>
+                <div class="modal-body text-center verify-account-confirm-body">
+                    <div class="verify-account-confirmed-text">
+                        <div class="verify-account-confirmed"><p>Your account verification request was submitted.</p></div>
+                        <div class="verify-account-instructions">
+                            <p>Your submitted document will be verify using Bangladesh Election Commetion server.</p>
+                            <p>It can take 3 business days.</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer account-verify-confirmed-footer">
+                        <button type="button" class="btn text-white verify-account-logout" id="verify-account" href="#">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ======== Account Verification Confirmation Ends ======= -->
 
 
 
@@ -270,14 +454,21 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-migrate.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/dropzone.min.js"></script>
+    
 
     <script src="js/hs.core.js"></script>
     <script src="js/hs-unfold.min.js"></script>
+    <script src="js/hs.dropzone.js"></script>
     <script>
         $(document).on('ready', function () {
           // initialization of unfold
           var unfold = new HSUnfold('.js-hs-unfold-invoker').init();
         });
+        $('.dz-dropzone').each(function () {
+            // initialization of dropzone file attach module
+            var dropzone = $.HSCore.components.HSDropzone.init('#' + $(this).attr('id'));
+          });
     </script>
 </body>
 </html>

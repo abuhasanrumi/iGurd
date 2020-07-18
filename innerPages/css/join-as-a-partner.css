@@ -1,6 +1,4 @@
 
-
-
 /* Main section */
 
 main.main-area {
@@ -139,95 +137,60 @@ small, #transaction-id {
 }
 
 
+/* Login Modal  */
 
-
-/* Popup Login Modal  */
-
-button.close {
-    position: absolute;
-    right: 5px;
-    top: 5px;
+.modal-header img {
+    width: 12px;
 }
-h4.modal-title {
+
+.modal-header {
+    padding-bottom: 1rem;
+}
+.modal-title-area {
+    margin: 0 auto;
+}
+.modal-title-area h5 {
     font-size: 20px;
     font-weight: 600;
-    color: #898989;
-}
-.modal-content {
-    width: 315px;
-    margin: 0 auto;
-    border-radius: 0;
-    border: none;
-}
-
-button.close img:active, button.close img:focus {
-    outline: none;
+    display: inline-block;
+    padding: 15px 35px;
+    border-bottom: 2px solid #E1E1E1;
+    margin-left: 10px;
 }
 .modal-header {
-    border-bottom: 1px solid #E1E1E1;
-    margin: 0px 85px;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    padding: 0 1.5rem;
 }
-
-.form-control {
-    margin: 25px 0;
-    text-align:center;
-    border: 1px solid #99AAB6;
+.modal-dialog.modal-dialog-centered {
+    width: 320px;
 }
-
-.form-control:focus {
-    color: #495057;
-    background-color: #fff;
-    outline: none;
-}
-.modal-footer {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-    padding: .75rem;
-    border-top: none; 
-    border-bottom-right-radius: 0; 
-    border-bottom-left-radius: 0;
-}
-
-.modal-footer button.btn.btn-default {
-    width: 100%;
-    background: #002B49;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 14px;
-    border: 2px solid #002B49;
-}
-
-.modal-footer .btn.focus, .btn:focus {
-    outline: 0;
-    box-shadow: 0 0 0 0;
-}
-
 .modal-body {
+    padding: 1.5rem 2.1rem;
     padding-bottom: 0;
 }
-
+.form-group input {
+    text-align: center;
+    letter-spacing: 1px;
+}
 .modal-footer {
+    margin: 0;
     padding: 0 1rem;
-    margin: 0 1rem;
+    border: none;
+}
+.modal-footer button {
+    background: #293250;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
-.extra-btns a {
-    text-decoration: none;
+.modal-footer button:hover, .modal-footer button:focus, .modal-footer button:active {
+    background: RGBA(41,50,80,.95);
+}
+
+.below-modal-footer-links a, .below-modal-footer-links small {
     font-size: 12px;
     font-weight: 400;
     color: #505050;
-}
-
-.extra-btns {
-    padding-bottom: 1.2rem;
-
 }

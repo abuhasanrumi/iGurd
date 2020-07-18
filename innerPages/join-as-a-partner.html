@@ -138,43 +138,10 @@
                             </div>
                             <div class="escrow-btns text-center">
                                 
-                                <button type="button" class="accept-btn" data-toggle="modal" data-target="#modalLoginForm">Accept and Pay</button>
+                                <button type="button" class="accept-btn" id="accept-btn" href="#" data-toggle="modal" data-target="#loginFormModal">Accept and Pay</button>
                                 <div class="escrow-negetive-btns d-flex justify-content-around">
                                     <a href="#" class="later-btn">Maybe later</a>
                                     <a href="#" class="dont-accept-btn">Don't accept</a>
-                                </div>
-                            </div>
-                            
-                            <!-- Modal -->
-                            <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                            aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header text-center">
-                                            <h4 class="modal-title w-100">Login</h4>
-                                            <button type="button" class="close d-flex align-items-center" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true"><img class="w-50" src="../images/close-btn.png" alt=""></span>
-                                            </button>
-                                        </div>
-                                        <div class="modal-body mx-3">
-                                            <div class="md-form">
-                                                <input type="email" id="defaultForm-email" class="form-control" placeholder="EMAIL/PHONE NO">
-                                            </div>
-
-                                            <div class="md-form mb-4">
-                                                <input type="password" id="defaultForm-pass" class="form-control" placeholder="PASSWORD">
-                                            </div>
-
-                                        </div>
-                                        <div class="modal-footer d-flex justify-content-center">
-                                            <button class="btn btn-default">Login</button>
-                                            
-                                        </div>
-                                        <div class="extra-btns text-center">
-                                            <a href="#">Create a New Account</a><small> | </small><a href="#">Forgot Password</a>
-                                        </div>
-                                        
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -261,11 +228,11 @@
                             <div class="side-nav-w-icons  p-4">
                                 <div class="side-dashboard d-flex align-items-center p-2">
                                     <img class="" src="../images/nav-icons/home.png" alt="">
-                                    <a href="#">Dashboard</a>
+                                    <a href="Dashboard.html">Dashboard</a>
                                 </div>
                                 <div class="side-profile d-flex align-items-center  p-2">
                                     <img class="" src="../images/nav-icons/profile.png" alt="">
-                                    <a href="#">Profile</a>
+                                    <a href="edit-account.html">Profile</a>
                                 </div>
                                 <div class="side-wallet d-flex align-items-center p-2">
                                     <img class="" src="../images/nav-icons/wallet.png" alt="">
@@ -298,6 +265,44 @@
         </div>
     </aside>
     <!-- ======== Sidebar Navigation Content Ends Here ======== -->
+
+
+
+    <!-- ======== Login Form Modal Starts ======= -->
+    <div id="loginFormModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title-area">
+                        <h5 class="modal-title" id="ChangePassModalTitle">Login</h5>
+                    </div>
+                <button type="button" class="btn btn-xs btn-icon" data-dismiss="modal" aria-label="Close">
+                    <img src="../images/dashboard/close.png" alt="">
+                </button>
+                </div>
+                <form>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="email-phone" placeholder="EMAIL/PHONE">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="Password" placeholder="PASSWORD">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn text-white login-btn" id="login-btn" data-toggle="modal" data-target="#change-password-confirmed">Login</button>
+                    </div>
+                    <div class="below-modal-footer-links text-center pb-4">
+                        <a href="#">Create a New Account</a>
+                        <small>/</small>
+                        <a href="#">Forgot Password</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- ======== Login Form Modal Ends ======= -->
+
 
 
 
