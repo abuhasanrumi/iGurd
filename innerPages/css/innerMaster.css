@@ -121,8 +121,8 @@ a.single-tab:hover,a.single-tab:focus  {
     background-color: RGBA(6,8,8,.4);
 }
 .sidebar {	
-    top: 60px;	
-    width: 17.6rem;	
+    top: 0;	
+    width: 17rem;	
 }	
 .sidebar-content img {	
     width: 40px;	
