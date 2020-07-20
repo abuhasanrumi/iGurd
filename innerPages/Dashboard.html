@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Escrow Payment - igurd</title>
+    <title>Escrow Payment - iGurd</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
     <link rel="stylesheet" href="css/theme.css">
@@ -107,28 +107,32 @@
                         </div>
                     </div>
                     <div class="col-md-4 my-4 my-md-0">
-                        <div class="card single-dashboard-card">
-                            <img class="card-img-top card-image mt-3" src="../images/dashboard/escrow.png" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Create escrow payment</h5>
-                                <p class="card-text">Send or reveive money securely</p>
+                        <a class="create-escrow" id="create-escrow" href="#" data-toggle="modal" data-target="#createEscrowModal">
+                            <div class="card single-dashboard-card">
+                                <img class="card-img-top card-image mt-3" src="../images/dashboard/escrow.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Create escrow payment</h5>
+                                    <p class="card-text">Send or reveive money securely</p>
+                                </div>
+                                    <!-- <div class="card-footer">
+                                        <a href="#">Create Escrow</a>
+                                    </div> -->
                             </div>
-                                <!-- <div class="card-footer">
-                                    <a href="#">Create Escrow</a>
-                                </div> -->
-                        </div>
+                        </a>
                     </div>
                     <div class="col-md-4 my-4 my-md-0">
-                        <div class="card single-dashboard-card">
-                            <img class="card-img-top card-image mt-3" src="../images/dashboard/deposit.png" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Create deposit payment</h5>
-                                <p class="card-text">Send deposit or receive deposits</p>
+                        <a href="#">
+                            <div class="card single-dashboard-card">
+                                <img class="card-img-top card-image mt-3" src="../images/dashboard/deposit.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Create deposit payment</h5>
+                                    <p class="card-text">Send deposit or receive deposits</p>
+                                </div>
+                                <!-- <div class="card-footer">
+                                        <a href="#">Send Deposit</a>
+                                </div> -->
                             </div>
-                            <!-- <div class="card-footer">
-                                    <a href="#">Send Deposit</a>
-                            </div> -->
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -189,8 +193,8 @@
 
 
      <!-- ======== Sidebar Navigation Content Starts Here ======== -->
-     <aside id="sidebarContent" class="hs-unfold-content sidebar p-6">
-        <div class="sidebar-scroller ">
+    <aside id="sidebarContent" class="hs-unfold-content sidebar pt-6">
+        <div class="sidebar-scroller">
         <div class="sidebar-container">
             <div class="sidebar-footer-offset" style="padding-bottom: 7rem;">
             <!-- Toggle Button -->
@@ -203,7 +207,7 @@
             <!-- Content -->
             <div class="scrollbar sidebar-body">
                 <div class="sidebar-content">
-                    <div class="side-nav-w-icons ">
+                    <div class="side-nav-w-icons  p-4">
                         <div class="side-dashboard d-flex align-items-center p-2">
                             <img class="" src="../images/nav-icons/home.png" alt="">
                             <a href="Dashboard.html">Dashboard</a>
@@ -246,18 +250,113 @@
   
 
 
+    <!-- ======== Create Escrow Modal Starts ======= -->
+    <div id="createEscrowModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title-area">
+                        <img src="../images/dashboard/change-pass.png" alt="">
+                        <h5 class="modal-title" id="createEscrowModalTitle">Create Escrow Payment</h5>
+                    </div>
+                <button type="button" class="btn btn-xs btn-icon" data-dismiss="modal" aria-label="Close">
+                    <img src="../images/dashboard/close.png" alt="">
+                </button>
+                </div>
+                <div class="modal-body">
+                    <form class="createEscrowModalForm">
+                        <div class="top-form-area d-flex justify-content-between">
+                            <div class="form-group escrow-type mr-1 w-100">
+                                <label for="escrowTypeSelectOption">I am</label>
+                                <select class="form-control" id="escrowTypeSelectOption" required>
+                                  <option selected>Please Select</option>
+                                  <option value="buy">Buying</option>
+                                  <option value="sell">Selling</option>
+                                </select>
+                            </div>
+                            <div class="form-group escrow-for ml-1 w-100">
+                                <label for="escrowForSelectOption">Product or Service:</label>
+                                <select class="form-control" id="escrowForSelectOption" required>
+                                  <option selected>Please Select</option>
+                                  <option value="product">Product</option>
+                                  <option value="service">Service</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="escrowTitle">Title of escrow payment</label>
+                            <input type="text" class="form-control" id="escrowTitle" required placeholder="Escrow Title">
+                        </div>
+                        <div class="description-dropzone-area">
+                            <div class="form-group description pb-2">
+                                <label for="escrowDescription">Description</label>
+                                <textarea class="form-control" id="escrowDescription" rows="4"></textarea>
+                            </div>
+                            <div class="dropzone pb-2">
+                                <label for="escrowDropzone">Images</label>
+                                <div id="escrowDropzone" class="js-dropzone dz-dropzone dz-dropzone-boxed gradient-overlay-half-primary-v4">
+                                    
+                                    <div class="dz-message mt-2">
+                                        <figure class="max-w-4rem mx-auto mb-2">
+                                            <img class="img-fluid" src="../images/dashboard/dropzone.png" alt="Image Description">
+                                        </figure>
+                                        <p class="m-0">Drop image  here (Max. 2MB per image, max. 5 image)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group escrowAmount pb-2">
+                            <label for="escrowAmountField">Amount (BDT):</label>
+                            <input type="number" class="form-control escrowAmountField" id="escrowAmountField" required placeholder="100">
+                        </div>
+                        <div class="createEscrowRadioBtns text-center pb-2">
+                            <div class="radio-btn-header pb-2">
+                                <h4>Choose who pays the escrow fees:</h4>
+                                <p class="m-0">The fees are due upon receipt of the money.</p>
+                            </div>
+                            <div class="radio-box-wra">
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="MeRadioBtn" name="escrowRadioBtns" class="custom-control-input">
+                                    <label class="custom-control-label" for="MeRadioBtn">Me</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="50/50RadioBtns" name="escrowRadioBtns" class="custom-control-input">
+                                    <label class="custom-control-label" for="50/50RadioBtns">50/50</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="partnerRadioBtns" name="escrowRadioBtns" class="custom-control-input">
+                                    <label class="custom-control-label" for="partnerRadioBtns">Partner</label>
+                                </div>
+                            </div>
+                        </div>
+                    </form> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ======== Create Escrow Modal Ends ======= -->
+
+
+
+
       <!-- JS Global Compulsory -->
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-migrate.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/dropzone.min.js"></script>
 
     <script src="js/hs.core.js"></script>
     <script src="js/hs-unfold.min.js"></script>
+    <script src="js/hs.dropzone.js"></script>
     <script>
         $(document).on('ready', function () {
           // initialization of unfold
           var unfold = new HSUnfold('.js-hs-unfold-invoker').init();
         });
+        $('.dz-dropzone').each(function () {
+            // initialization of dropzone file attach module
+            var dropzone = $.HSCore.components.HSDropzone.init('#' + $(this).attr('id'));
+          });
     </script>
 </body>
 </html>
