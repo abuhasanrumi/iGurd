@@ -3,10 +3,14 @@ main {
     min-height: 600px;
 }
 
-
 footer  {
     background: rgb(245, 245, 245);
 }
+body {
+    padding: 0 !important;
+    margin: 0;
+}
+.modal-open{overflow:auto;padding-right:0 !important;}
 
 /* ======== Main Dashboard Page Starts Here ========= */
 .card-image {
@@ -240,3 +244,86 @@ p.file-upload-notice {
 }
 
 /* ======== Edit Account Page Ends Here =========  */
+
+
+
+/* Create Escrow Area */
+.form-group label, .dropzone label {
+    font-size: 14px;
+}
+.modal-body {
+    padding-top: .5rem;
+}
+
+.form-control {
+    border: 1.2px solid #002B49;
+    font-size: 14px;
+    font-weight: 400;
+    height: 40px;
+    padding: 9px;
+    padding-left: 14px;
+}
+.form-control option, .form-control option {
+    outline: none;
+    border: none;
+}
+.description-dropzone-area {
+    display: flex;
+    justify-content: space-between;
+}
+.form-group.description {
+    width: 59%;
+}
+.description-dropzone-area .dropzone {
+    max-width: 39%;
+}
+.createEscrowModalForm .form-group {
+    margin-bottom: .5rem;
+}
+
+form.createEscrowModalForm .dz-message p {
+    font-size: 10px;
+}
+textarea#escrowDescription {
+    min-height: 80px;
+    height: 80px;
+}
+div#escrowDropzone {
+    border: 1.2px solid #002B49;
+    height: 80px;
+}
+input#escrowAmountField {
+    border: none;
+    border-radius: 0;
+    font-size: 26px;
+    border-bottom: 2px solid #002B49;
+    font-weight: 500;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
+.modal-header {
+    padding: .75rem;
+}
+.radio-btn-header h4 {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+.radio-btn-header p {
+    font-size: 13px;
+}
+.custom-control-label::before {
+    border: 2px solid #002B49;
+}
+.custom-control-input:checked~.custom-control-label::before {
+    border-color: #002B49;
+    background-color: #002B49;
+}
