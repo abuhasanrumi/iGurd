@@ -292,17 +292,23 @@ div#escrowDropzone {
     border: 1.2px solid #002B49;
     height: 80px;
 }
-input#escrowAmountField {
+input#escrowAmountField, input#addMoneyField {
     border: none;
     border-radius: 0;
     font-size: 26px;
     border-bottom: 2px solid #002B49;
     font-weight: 500;
 }
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
-  margin: 0; 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
 select {
     -webkit-appearance: none;
@@ -320,10 +326,125 @@ select {
 .radio-btn-header p {
     font-size: 13px;
 }
+.custom-control-label {
+    font-size: 14px;
+    font-weight: 500;
+}
 .custom-control-label::before {
     border: 2px solid #002B49;
 }
 .custom-control-input:checked~.custom-control-label::before {
     border-color: #002B49;
     background-color: #002B49;
+}
+.modal.fade.show {
+    z-index: 1112;
+}
+.createEscrowPaymentDetails span p, .addMoneyDetails span p {
+    padding-right: 3px;
+    display: block;
+}
+.payment-details, .payment-details span, .payment-details span p, .addMoneyDetails, .addMoneyDetails span, .addMoneyDetails span p {
+    font-size: 14px !important;
+    color: #000;
+}
+.toPayTotal p, .toPayTotal span, .toPayTotal span p {
+    font-size: 18px !important;
+}
+.coupon-area a {
+    color: #000;
+    font-size: 14px;
+    padding: 5px 0;
+    display: block;
+}
+.card.card-body.coupon-body {
+    padding: 0;
+}
+.card.card-body.coupon-body .form-group {
+    padding: 0;
+    box-shadow: none;
+    display: inline-flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+.card.card-body.coupon-body input, .card.card-body.coupon-body button {
+    height: 40px;
+    font-size: 14px;
+    padding: 0 20px;
+}
+.card.card-body.coupon-body button {
+    background: #002B49;
+    color: #fff;
+}
+.card.card-body.coupon-body input {
+    height: 40px;
+    font-size: 14px;
+    padding: 0 20px;
+    border: 1px solid #002B49;
+    border-right: none;
+    border-radius: 7px 0 0 7px;
+    color: #000;
+}
+.card.card-body.coupon-body button {
+    border-radius: 0px 7px 7px 0px;
+    border: 1px solid #002B49;
+}
+.card.card-body.coupon-body button:hover, .card.card-body.coupon-body button:focus, .card.card-body.coupon-body button:active {
+    background: RGBA(0,43,73,.9);
+}
+.createEscrowFooterNext-btn, .addMoneyFooter-btn {
+    font-weight: 600;
+    font-size: 18px;
+    background: #002B49;
+    color: #fff;
+    width: 100%;
+    display: block;
+    border-radius: 7px;
+    padding: 8px 0;
+}
+.createEscrowFooterNext-btn:hover, .createEscrowFooterNext-btn:focus, .createEscrowFooterNext-btn:active, .addMoneyFooter-btn:hover, .addMoneyFooter-btn:focus, .addMoneyFooter-btn:active {
+    background: RGBA(0,43,73,.9);
+    color: #fff;
+}
+
+div#invite-partner-link {
+    display: flex;
+    flex-direction: column;
+}
+div#invite-partner-link textarea {
+    text-align: center;
+    border: none;
+}
+
+  
+a.copy-btn img {
+    width: 20px;
+    margin: 0 10px;
+    display: inline-block;
+}
+div#invite-partner-link img {
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    margin: 0 10px;
+}
+a#invite-partner-close {
+    font-size: 16px;
+    font-weight: 900;
+    color: #002B49;
+}
+p.copy-btn {
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p#share-link {
+    font-size: 18px;
+}
+.invite-partner-confirmed p, .recharge-wallet-confirmed p {
+    font-size: 18px;
+    font-weight: 600;
 }
