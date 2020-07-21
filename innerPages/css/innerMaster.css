@@ -514,6 +514,7 @@ small, #transaction-id {
 #loginFormModal .modal-dialog {
     max-width: 320px;
     padding-bottom: 1rem;
+    margin: 0 auto;
 }
 #loginFormModal .modal-title-area {
     margin: 0 auto;
@@ -754,7 +755,7 @@ p.copy-btn {
     align-items: center;
 }
 p#share-link {
-    font-size: 18px;
+    font-size: 16px;
 }
 .invite-partner-confirmed p, .recharge-wallet-confirmed p {
     font-size: 18px;
@@ -809,6 +810,9 @@ a.delete-account {
 }
 .delete-account-text textarea {
     min-height: 100px;
+}
+.modal-footer.deleteEscrowFooter {
+    padding: 0 2rem;
 }
 .file-upload-area a.btn {
     background: #002B49;
@@ -1128,6 +1132,7 @@ form .form-group {
   
 .modal-dialog.payNowFirst {
     max-width: 330px;
+    margin: 0 auto;
 }
 .payment {
     display: inline-block;
