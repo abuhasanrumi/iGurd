@@ -602,7 +602,7 @@ small, #transaction-id {
     width: 59%;
 }
 .description-dropzone-area .dropzone {
-    max-width: 39%;
+    width: 39%;
 }
 .createEscrowModalForm .form-group {
     margin-bottom: .5rem;
@@ -611,6 +611,11 @@ small, #transaction-id {
 form.createEscrowModalForm .dz-message p {
     font-size: 10px;
 }
+@media only screen and (max-width: 600px) {
+    form.createEscrowModalForm .dz-message p {
+        display: none;
+    }
+  }
 textarea#escrowDescription {
     min-height: 80px;
     height: 80px;
@@ -756,6 +761,7 @@ p.copy-btn {
 }
 p#share-link {
     font-size: 16px;
+    overflow-wrap: anywhere;
 }
 .invite-partner-confirmed p, .recharge-wallet-confirmed p {
     font-size: 18px;
@@ -893,7 +899,7 @@ p.file-upload-notice {
 }
 
 .form-group label, .dropzone label {
-    font-size: 18px;
+    font-size: 14px;
 }
 .password-changed-text {
     font-size: 18px;
@@ -1232,7 +1238,7 @@ input[type="radio"]:checked + label {
     font-size: 18px;
     font-weight: 600;
     cursor: pointer;
-    padding: 5px 40px;
+    padding: 5px 30px;
 }
 
 /* ======== Inside Escrow Page Ends Here =========  */
