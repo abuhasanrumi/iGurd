@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escrow Payment - igurd</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/font-awesome.all.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="../innerPages/css/innerMaster.css">
+</head>
+<body>
+    <header class="innerNav d-flex align-items-center bg-white flex-wrap">
+        <div class="container">
+            <nav class="d-flex justify-content-between align-items-center">
+                <div>
+                    <a href="#"><img class="logo" src="../images/innerLogo.png" alt="iGurd Logo"></a>
+                </div>
+                <div class="right-nav">
+                    <div class="nav-links d-flex d-block justify-content-between align-items-center">
+                        <a class="single-tab active" href="#dropdownWithHref"><img src="../images/nav-icons/home.png" alt=""></a>
+                        <!-- Unfold (Dropdown) -->
+                        <div class="hs-unfold">
+                            <a class="js-hs-unfold-invoker dropdown-toggle single-tab " href="javascript:;"
+                            data-hs-unfold-options='{
+                                "target": "#dropdownWithHref",
+                                "type": "css-animation",
+                                "animationIn": "fadeInUp",
+                                "animationOut": "fadeOutDown",
+                                "hasOverlay": "rgba(0,0,0,.1)",
+                                "smartPositionOff": true
+                            }'><img src="../images/nav-icons/notification.png" alt=""></a>
+                        
+                            <div id="dropdownWithHref" class="hs-unfold-content dropdown-menu notification-area">
+                                <div class="single-notice-wrap">
+                                    <div class="single-notification-area dropdown-item" id="single-notification">
+                                        <img src="../images/nav-icons/user.png" alt="">
+                                        <div class="notification-text">
+                                            <p ><a href="#" id="user-profile">Md. Shahoreyer M.</a> invited you to join <a href="#" id="escrow-link">Test</a> escrow payment</p>
+                                            <small id="notification-time"><span id="notification-exact-time">1 hr</span> ago</small>
+                                        </div>
+                                    </div>
+                                    <div class="single-notification-area dropdown-item" id="single-notification">
+                                        <img src="../images/nav-icons/user.png" alt="">
+                                        <div class="notification-text">
+                                            <p ><a href="#" id="user-profile">Md. Shahoreyer M.</a> invited you to join <a href="#" id="escrow-link">Test</a> escrow payment</p>
+                                            <small id="notification-time"><span id="notification-exact-time">1 hr</span> ago</small>
+                                        </div>
+                                    </div>
+                                    <div class="single-notification-area system-notice dropdown-item" id="single-notification">
+                                        <img src="../images/nav-icons/system.png" alt="">
+                                        <div class="notification-text">
+                                            <p >System invited you to pay the escrow payment</p>
+                                            <small id="notification-time"><span id="notification-exact-time">1 hr</span> ago</small>
+                                        </div>
+                                    </div>
+                                    <div class="single-notification-area dropdown-item" id="single-notification">
+                                        <img src="../images/nav-icons/user.png" alt="">
+                                        <div class="notification-text">
+                                            <p ><a href="#" id="user-profile">Md. Shahoreyer M.</a> invited you to join <a href="#" id="escrow-link">Test</a> escrow payment</p>
+                                            <small id="notification-time"><span id="notification-exact-time">1 hr</span> ago</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Unfold (Dropdown) -->
+                        
+                        <!-- Unfold (Sidebar) -->
+                        <div class="hs-unfold">
+                            <a class="single-tab js-hs-unfold-invoker" href="javascript:;"
+                            data-hs-unfold-options='{
+                                "target": "#sidebarContent",
+                                "type": "css-animation",
+                                "animationIn": "fadeInRight",
+                                "animationOut": "fadeOutRight",
+                                "hasOverlay": "rgba(0,0,0,.1)",
+                                "smartPositionOff": true
+                            }'><img src="../images/nav-icons/hamburger-bars.png" alt=""></a>
+                        </div>
+                        <!-- End Unfold (Sidebar) -->
+                    </div>
+                        
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+
+
+    <main class="main-area">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-12 col-lg-6 left-side my-4">
+                    <div class="left-text bg-white">
+                        <p class="left-header-title">Find a Partner</p>
+                        <div class="left-body p-4 pb-1">
+                            <div class="invitation-message text-center p-3 d-flex justify-content-between align-items-center">
+                                <p class="escrow-title m-0" id="escrow-title">Escrow Title</p>
+                                <a href="#" id="escrow-image">View Image</a>
+                            </div>
+                            <div class="transaction-details d-flex justify-content-between">
+                                <small class="transaction-code">Transaction No: <span id="transaction-id">061616IGP</span></small>
+                                <small class="transaction-date">09 July 2020, <span id="transaction-time">20:30</span></small>
+                            </div>
+                            <div class="step-guide d-flex align-items-center py-2">
+                                <a class="step-by-step-link d-inline-block d-flex align-items-center" href="#"><img src="../images/dashboard/guide.png" alt="">Step-by-Step Guide</a>
+                            </div>
+                            <div class="escrow-details py-2">
+                                <div class="escrowPrice d-flex justify-content-between align-items-center">
+                                    <p class="m-0 payment-details">Price:</p>
+                                    <span class="d-flex justify-content-between align-items-center"><p class="m-0 mr-1 mr-1" id="escrowPrice">100.00</p> BDT</span>
+                                </div>
+                                <div class="escrowIGurdFee d-flex justify-content-between align-items-center">
+                                    <p class="m-0 payment-details">iGurd Fee:</p>
+                                    <span class="d-flex justify-content-between align-items-center"><p class="m-0 mr-1" id="iGurdFee">10.00</p> BDT</span>
+                                </div>
+                                <div class="toPayTotal d-flex justify-content-between align-items-center my-2">
+                                    <p class="my-1">To pay:</p>
+                                    <span class="d-flex justify-content-between align-items-center"><p class="m-0 mr-1" id="toPay">110.00</p> BDT</span>
+                                </div>
+                            </div>
+                            <div class="fee-info d-flex align-items-center">
+                                <a class="fee-info-link d-inline-block d-flex align-items-center" href="#">* Information about our fees</a>
+                            </div>
+                            <div class="escrow-footer-btns text-center my-2">
+                                <a href="#" class="btn invite-partner-btn my-1 py-2 px-6" id="invite-partner-btn" data-toggle="modal" data-target="#invitePartnerModal" data-dismiss="modal">Invite Business Partner</a>
+                                <a href="#" class="btn delete-escrow-btn my-1 py-2 px-6" id="delete-escrow-btn" data-toggle="modal" data-target="#deleteEscrowModal" data-dismiss="modal">Delete Escrow Payment</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 right-side my-4">
+                    <div class="right-text bg-white py-6 px-4">
+                        <div class="status-timeline">
+                            <!-- Step -->
+                            <ul class="step step-md step-centered step-border-last-0">
+                                <li class="step-item">
+                                <div class="step-content-wrapper">
+                                    <span class="step-icon step-icon-xs active"></span>
+                                    <div class="step-content">
+                                    <h4>Started</h4>
+                                    </div>
+                                </div>
+                                </li>
+                            
+                                <li class="step-item">
+                                <div class="step-content-wrapper">
+                                    <span class="step-icon step-icon-xs"></span>
+                                    <div class="step-content">
+                                    <h4>Paid</h4>
+                                    </div>
+                                </div>
+                                </li>
+                            
+                                <li class="step-item">
+                                <div class="step-content-wrapper">
+                                    <span class="step-icon step-icon-xs"></span>
+                                    <div class="step-content">
+                                    <h4>Finished</h4>
+                                    </div>
+                                </div>
+                                </li>
+                            </ul>
+                            <!-- End Step -->
+                        </div>
+                    </div>
+                    <div class="right-text second-right bg-white p-3 my-4 d-flex align-items-center">
+                        <img src="../images/dashboard/user.png" alt=""><a href="#" class="buyer-name" id="buyer-name">Abu Hasan Rumi</a>
+                    </div>
+                    <div class="right-text third-right chat-box-area bg-white p-3 my-4">
+                        <div class="chat-box" id="chat-box">
+                            <div class="system-message d-flex align-items-center" id="system-message">
+                                <img src="../images/dashboard/system.png" alt="">
+                                <div class="message-text">
+                                    <small class="message-time">
+                                        a few seconds ago
+                                    </small>
+                                    <p>You have created the escrow payment</p>
+                                </div>
+                            </div>
+                            <div class="your-message d-flex align-items-end flex-column" id="your-message">
+                                <div class="message-text">
+                                    <small class="message-time">
+                                        a few seconds ago
+                                    </small>
+                                    <p>Please pay after you join</p>
+                                </div>
+                            </div>
+                            <div class="system-message d-flex align-items-center" id="system-message">
+                                <img src="../images/dashboard/system.png" alt="">
+                                <div class="message-text">
+                                    <small class="message-time">
+                                        a few seconds ago
+                                    </small>
+                                    <p><span class="partner-name" id="partner-name">Abu Hasan Rumi</span> joined the escrow</p>
+                                </div>
+                            </div>
+                            <div class="partner-message d-flex align-items-center" id="partner-message">
+                                <img src="../images/dashboard/user.png" alt="">
+                                <div class="message-text">
+                                    <small class="message-time">
+                                        a few seconds ago
+                                    </small>
+                                    <p>I will pay now</p>
+                                </div>
+                            </div>
+                            <div class="pay-now-area d-flex justify-content-center">
+                                <a href="#" id="pay-now-btn" data-toggle="modal" data-target="#payNowModalFirst" data-dismiss="modal" class="btn pay-now-btn">Pay Now</a>
+                            </div>
+                            <div class="your-message d-flex align-items-end flex-column" id="your-message">
+                                <div class="message-text">
+                                    <small class="message-time">
+                                        a few seconds ago
+                                    </small>
+                                    <p>I am not sure about the pay button</p>
+                                </div>
+                            </div>
+                            <div class="partner-message d-flex align-items-center" id="partner-message">
+                                <img src="../images/dashboard/user.png" alt="">
+                                <div class="message-text">
+                                    <small class="message-time">
+                                        a few seconds ago
+                                    </small>
+                                    <p>No problem, I've found it.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <form>
+                            <div class="form-group my-2">
+                              <input type="text" class="form-control" id="inputMessage" placeholder="Type your message">
+                              <button type="submit" class="btn chat-send-btn"><img src="../images/dashboard/send.png" alt=""></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    
+
+
+
+        <footer>
+            <div class="container">
+                <div class="footer-list text-center">
+                    <ul>
+                        <li class="p-1 p-md-0 px-md-3"><a href="#">FAQ</a></li>
+                        <li class="p-1 p-md-0 px-md-3"><a href="#">Terms</a></li>
+                        <li class="p-1 p-md-0 px-md-3"><a href="#">Privacy</a></li>
+                        <li class="p-1 p-md-0 px-md-3"><a href="#">Impant</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+  
+
+    
+
+    <!-- ======== Sidebar Navigation Content Starts Here ======== -->
+    <aside id="sidebarContent" class="hs-unfold-content sidebar pt-6">
+        <div class="sidebar-scroller">
+            <div class="sidebar-container">
+                <div class="sidebar-footer-offset" style="padding-bottom: 7rem;">
+                <!-- Toggle Button -->
+                    <div class="d-flex justify-content-end align-items-center ">
+                        <div class="hs-unfold">
+                        </div>
+                    </div>
+                <!-- End Toggle Button -->
+        
+                <!-- Content -->
+                    <div class="scrollbar sidebar-body">
+                        <div class="sidebar-content">
+                            <div class="side-nav-w-icons  p-4">
+                                <div class="side-dashboard d-flex align-items-center p-2">
+                                    <img class="" src="../images/nav-icons/home.png" alt="">
+                                    <a href="Dashboard.html">Dashboard</a>
+                                </div>
+                                <div class="side-profile d-flex align-items-center  p-2">
+                                    <img class="" src="../images/nav-icons/profile.png" alt="">
+                                    <a href="edit-account.html">Profile</a>
+                                </div>
+                                <div class="side-wallet d-flex align-items-center p-2">
+                                    <img class="" src="../images/nav-icons/wallet.png" alt="">
+                                    <span class="side-wallet-text d-block">
+                                        <a href="#">Wallet</a>
+                                        <small class="d-block">Your balance <span id="side-wallet-balance">0.00</span> BDT</small>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="side-escrow-section p-4">
+                                <a href="#"> Create escrow payment</a>
+                                <a href="#"> Create deposit payment</a>
+                            </div>
+                            <div class="side-other-menu p-4">
+                                <a href="#">Help & FAQ</a>
+                                <a href="#">Contact support</a>
+                                <a href="#">About us</a>
+                            </div>
+                            <div class="log-out-sec d-flex justify-content-center px-3">
+                                <a href="#" class="log-out-btn d-flex align-items-center justify-content-center">
+                                    <img src="../images/nav-icons/log-out.png" alt="">
+                                    <p class="m-0  text-white">Log Out</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                <!-- End Content -->
+                </div>
+            </div>
+        </div>
+    </aside>
+    <!-- ======== Sidebar Navigation Content Ends Here ======== -->
+
+
+
+    <!-- ======== Login Form Modal Starts ======= -->
+    <div id="loginFormModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title-area">
+                        <h5 class="modal-title" id="ChangePassModalTitle">Login</h5>
+                    </div>
+                <button type="button" class="btn btn-xs btn-icon" data-dismiss="modal" aria-label="Close">
+                    <img src="../images/dashboard/close.png" alt="">
+                </button>
+                </div>
+                <form>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="email-phone" placeholder="EMAIL/PHONE">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="Password" placeholder="PASSWORD">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn text-white login-btn" id="login-btn" data-toggle="modal" data-target="#change-password-confirmed">Login</button>
+                    </div>
+                    <div class="below-modal-footer-links text-center pb-4">
+                        <a href="#">Create a New Account</a>
+                        <small>/</small>
+                        <a href="#">Forgot Password</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- ======== Login Form Modal Ends ======= -->
+
+
+
+
+    <!-- ======== Pay Now First Modal Starts ======= -->
+    <div id="payNowModalFirst" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog payNowFirst modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header payNowModalHeader">
+                    <div class="modal-title-area">
+                        <h5 class="payNowModalTitle" id="payNowModalTitle">iGurd Payment</h5>
+                    </div>
+                <button type="button" class="btn btn-xs btn-icon" data-dismiss="modal" aria-label="Close">
+                    <img src="../images/dashboard/close.png" alt="">
+                </button>
+                </div>
+                <form>
+                    <div class="modal-body">
+                        <div class="payment-partners text-center">
+                            <div class="payment payment-1">
+                                <a href="#" id="payment-partner-icon" data-toggle="modal" data-target="#paymentVerification" data-dismiss="modal"><img src="../images/payment-partner.png" alt=""></a>
+                            </div>
+                            <div class="payment payment-2">
+                                <a href="#" id="payment-partner-icon" data-toggle="modal" data-target="#paymentVerification" data-dismiss="modal"><img src="../images/payment-partner.png" alt=""></a>
+                            </div>
+                            <div class="payment payment-3">
+                                <a href="#" id="payment-partner-icon" data-toggle="modal" data-target="#paymentVerification" data-dismiss="modal"><img src="../images/payment-partner.png" alt=""></a>
+                            </div>
+                            <div class="payment payment-4">
+                                <a href="#" id="payment-partner-icon" data-toggle="modal" data-target="#paymentVerification" data-dismiss="modal"><img src="../images/payment-partner.png" alt=""></a>
+                            </div>
+                            <div class="payment payment-5">
+                                <a href="#" id="payment-partner-icon" data-toggle="modal" data-target="#paymentVerification" data-dismiss="modal"><img src="../images/payment-partner.png" alt=""></a>
+                            </div>
+                            <div class="payment payment-6">
+                                <a href="#" id="payment-partner-icon" data-toggle="modal" data-target="#paymentVerification" data-dismiss="modal"><img src="../images/payment-partner.png" alt=""></a>
+                            </div>
+                            <div class="payment payment-7">
+                                <a href="#" id="payment-partner-icon" data-toggle="modal" data-target="#paymentVerification" data-dismiss="modal"><img src="../images/payment-partner.png" alt=""></a>
+                            </div>
+                            <div class="payment payment-8">
+                                <a href="#" id="payment-partner-icon" data-toggle="modal" data-target="#paymentVerification" data-dismiss="modal"><img src="../images/payment-partner.png" alt=""></a>
+                            </div>
+                            <div class="payment payment-9">
+                                <a href="#" id="payment-partner-icon" data-toggle="modal" data-target="#paymentVerification" data-dismiss="modal"><img src="../images/payment-partner.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- ======== Pay Now First Modal Ends ======= -->
+
+
+
+
+
+    <!-- ======== Payment Verification Modal Starts ======= -->
+    <div id="paymentVerification" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog payNowFirst modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title-area">
+                        <h5 class="payNowModalTitle" id="payNowModalTitle">iGurd Payment</h5>
+                    </div>
+                <button type="button" class="btn btn-xs btn-icon" data-dismiss="modal" aria-label="Close">
+                    <img src="../images/dashboard/close.png" alt="">
+                </button>
+                </div>
+                <form>
+                    <div class="modal-body text-center">
+                        <div class="partner-icon">
+                            <img src="../images/payment-partner.png" alt="">
+                        </div>
+                        <div class="short-payment-instructions">
+                            <p>Send BDT 110 to 01677707511 using bKash send money option</p>
+                            <p>Use your transaction no as a ref no.</p>
+                        </div>
+                        <div class="payment-instruction-buttons pb-3">
+                            <a href="#">View instructions</a>
+                            <a href="#">Help</a>
+                        </div>
+                        <form>
+                            <div class="form-group paymentVerify">
+                                <input type="text" class="form-control" id="transactionID" aria-describedby="trxID" placeholder="bKash Trx ID">
+                            </div>
+                            <button type="submit" class="btn paymentVerifySubmit py-2 px-7 text-white" data-toggle="modal" data-target="#paymentVerificationConfirm" data-dismiss="modal">Submit</button>
+                        </form>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- ======== Payment Verification Modal Ends ======= -->
+
+
+
+
+    <!-- ======== Payment Verification Confirmation Modal Starts ======= -->
+    <div id="paymentVerificationConfirm" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog payNowFirst modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title-area">
+                        <h5 class="payNowModalTitle" id="payNowModalTitle">iGurd Payment</h5>
+                    </div>
+                <button type="button" class="btn btn-xs btn-icon" data-dismiss="modal" aria-label="Close">
+                    <img src="../images/dashboard/close.png" alt="">
+                </button>
+                </div>
+                <form>
+                    <div class="modal-body text-center">
+                        <div class="partner-icon">
+                            <img src="../images/payment-partner.png" alt="">
+                        </div>
+                        <div class="paymentConfirmed">
+                            <p>Payment Successfull</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn text-white payment-verify-closes" id="close-btn">Close</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- ======== Payment Verification Confirmation Modal Ends ======= -->
+
+
+
+    <!-- ======== Invite Business Partner Modal Starts ======= -->
+    <div id="invitePartnerModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title-area">
+                        <img src="../images/dashboard/change-pass.png" alt="">
+                        <h5 class="modal-title" id="invitePartnerModalTitle">Invite Business Partner</h5>
+                    </div>
+                <button type="button" class="btn btn-xs btn-icon" data-dismiss="modal" aria-label="Close">
+                    <img src="../images/dashboard/close.png" alt="">
+                </button>
+                </div>
+                <div class="modal-body text-center invite-partner-body">
+                    <div class="invite-partner-body-text pb-3 pt-2">
+                        <div class="invite-partner-confirmed "><p>Send the following link to your partner:</p></div>
+                        <div class="invite-partner-link" id="invite-partner-link">
+                            <p id="share-link" class="share-link">https://secure.igurd.com/links/0720OIAP?icc=0720OIAP&lang=en</p>
+                            <p class="copy-btn"><img src="../images/dashboard/copy-btn.png" alt="">Copy Link</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer invite-partner-confirmed-footer">
+                        <a type="button" class="invite-partner-close" id="invite-partner-close" href="#">Close</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ======== Invite Business Partner Modal Ends ======= -->
+
+
+
+    <!-- ======== Delete Escrow Modal Starts ======= -->
+    <div id="deleteEscrowModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog deleteEscrowModalWrap modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title-area">
+                        <img src="../images/dashboard/change-pass.png" alt="">
+                        <h5 class="modal-title deleteEscrowModalTitle" id="deleteEscrowModalTitle">Delete Escrow Payment</h5>
+                    </div>
+                    <button type="button" class="btn btn-xs btn-icon" data-dismiss="modal" aria-label="Close">
+                    <img src="../images/dashboard/close.png" alt="">
+                </button>
+                </div>
+                <form>
+                    <div class="modal-body text-center">
+                        <div class="deleteEscrowWarning">
+                            <p class="deleteEscrowTopWarning">Do you really want to delete the escrow payment?</p>
+                            <p>Attention: This action can not be undone!</p>
+                        </div>
+                        <div class="modal-footer deleteEscrowFooter d-flex justify-content-around py-2">
+                            <input id="toggle-on" name="toggle" type="radio">
+                            <label for="toggle-on">Yes</label>
+                            <input id="toggle-off" name="toggle" type="radio">
+                            <label for="toggle-off">No</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- ======== Payment Verification Confirmation Modal Ends ======= -->
+
+
+
+      <!-- JS Global Compulsory -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/hs.core.js"></script>
+    <script src="js/hs-unfold.min.js"></script>
+    <script src="js/scripts.js"></script>
+    
+</body>
+</html>
