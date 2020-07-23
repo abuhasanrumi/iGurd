@@ -120,6 +120,10 @@ a.login-btn {
   background-color:#0073E5;
   color: #fff;
   border: 2px solid #0073E5;
+  cursor: pointer;
+}
+a.login-btn:hover {
+  color: #fff;
 }
 @media (min-width: 1300px){
 .container {
