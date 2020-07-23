@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Escrow Payment - igurd</title>
+    <title>Edit Profile - iGurd</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/theme.css">
     <link rel="stylesheet" href="css/innerMaster.css">
@@ -13,11 +13,11 @@
         <div class="container">
             <nav class="d-flex justify-content-between align-items-center">
                 <div>
-                    <a href="#"><img class="logo" src="../images/innerLogo.png" alt="iGurd Logo"></a>
+                    <a href="Dashboard.html"><img class="logo" src="../images/innerLogo.png" alt="iGurd Logo"></a>
                 </div>
                 <div class="right-nav">
                     <div class="nav-links d-flex d-block justify-content-between align-items-center">
-                        <a class="single-tab" href="#dropdownWithHref"><img src="../images/nav-icons/home.png" alt=""></a>
+                        <a class="single-tab" href="Dashboard.html"><img src="../images/nav-icons/home.png" alt=""></a>
                         <!-- Unfold (Dropdown) -->
                         <div class="hs-unfold">
                             <a class="js-hs-unfold-invoker dropdown-toggle single-tab" href="javascript:;"
@@ -175,55 +175,55 @@
     <!-- ======== Sidebar Navigation Content Starts Here ======== -->
     <aside id="sidebarContent" class="hs-unfold-content sidebar pt-6">
         <div class="sidebar-scroller">
-        <div class="sidebar-container">
-            <div class="sidebar-footer-offset" style="padding-bottom: 7rem;">
-            <!-- Toggle Button -->
-            <div class="d-flex justify-content-end align-items-center ">
-                <div class="hs-unfold">
+            <div class="sidebar-container">
+                <div class="sidebar-footer-offset" style="padding-bottom: 7rem;">
+                    <!-- Toggle Button -->
+                    <div class="d-flex justify-content-end align-items-center ">
+                        <div class="hs-unfold">
+                        </div>
+                    </div>
+                    <!-- End Toggle Button -->
+            
+                    <!-- Content -->
+                    <div class="scrollbar sidebar-body">
+                        <div class="sidebar-content">
+                            <div class="side-nav-w-icons  p-4">
+                                <div class="side-dashboard d-flex align-items-center p-2">
+                                    <img class="" src="../images/nav-icons/home.png" alt="">
+                                    <a href="Dashboard.html">Dashboard</a>
+                                </div>
+                                <div class="side-profile d-flex align-items-center  p-2">
+                                    <img class="" src="../images/nav-icons/profile.png" alt="">
+                                    <a href="edit-account.html">Profile</a>
+                                </div>
+                                <div class="side-wallet d-flex align-items-center p-2">
+                                    <img class="" src="../images/nav-icons/wallet.png" alt="">
+                                    <span class="side-wallet-text d-block">
+                                        <a href="#">Wallet</a>
+                                        <small class="d-block">Your balance <span id="side-wallet-balance">0.00</span> BDT</small>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="side-escrow-section p-4">
+                                <a href="#" data-toggle="modal" data-target="#createEscrowModal" data-dismiss="modal" aria-label="Close"> Create escrow payment</a>
+                                <a href="#" data-toggle="modal" data-target="#addWalletMoneyModal" > Create deposit payment</a>
+                            </div>
+                            <div class="side-other-menu p-4">
+                                <a href="#">Help & FAQ</a>
+                                <a href="#">Contact support</a>
+                                <a href="#">About us</a>
+                            </div>
+                            <div class="log-out-sec d-flex justify-content-center px-3">
+                                <a href="#" class="log-out-btn d-flex align-items-center justify-content-center">
+                                    <img src="../images/nav-icons/log-out.png" alt="">
+                                    <p class="m-0  text-white">Log Out</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                <!-- End Content -->
                 </div>
             </div>
-            <!-- End Toggle Button -->
-    
-            <!-- Content -->
-            <div class="scrollbar sidebar-body">
-                <div class="sidebar-content">
-                    <div class="side-nav-w-icons  p-4">
-                        <div class="side-dashboard d-flex align-items-center p-2">
-                            <img class="" src="../images/nav-icons/home.png" alt="">
-                            <a href="Dashboard.html">Dashboard</a>
-                        </div>
-                        <div class="side-profile d-flex align-items-center  p-2">
-                            <img class="" src="../images/nav-icons/profile.png" alt="">
-                            <a href="edit-account.html">Profile</a>
-                        </div>
-                        <div class="side-wallet d-flex align-items-center p-2">
-                            <img class="" src="../images/nav-icons/wallet.png" alt="">
-                            <span class="side-wallet-text d-block">
-                                <a href="#">Wallet</a>
-                                <small class="d-block">Your balance <span id="side-wallet-balance">0.00</span> BDT</small>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="side-escrow-section p-4">
-                        <a href="#"> Create escrow payment</a>
-                        <a href="#"> Create deposit payment</a>
-                    </div>
-                    <div class="side-other-menu p-4">
-                        <a href="#">Help & FAQ</a>
-                        <a href="#">Contact support</a>
-                        <a href="#">About us</a>
-                    </div>
-                    <div class="log-out-sec d-flex justify-content-center px-3">
-                        <a href="#" class="log-out-btn d-flex align-items-center justify-content-center">
-                            <img src="../images/nav-icons/log-out.png" alt="">
-                            <p class="m-0  text-white">Log Out</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <!-- End Content -->
-            </div>
-        </div>
         </div>
     </aside>
     <!-- ======== Sidebar Navigation Content Ends Here ======== -->
@@ -446,6 +446,230 @@
     <!-- ======== Account Verification Confirmation Ends ======= -->
 
 
+    <!-- ======== Create Escrow Modal Starts ======= -->
+    <div id="createEscrowModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title-area">
+                        <img src="../images/dashboard/change-pass.png" alt="">
+                        <h5 class="modal-title" id="createEscrowModalTitle">Create Escrow Payment</h5>
+                    </div>
+                <button type="button" class="btn btn-xs btn-icon" data-dismiss="modal" aria-label="Close">
+                    <img src="../images/dashboard/close.png" alt="">
+                </button>
+                </div>
+                <div class="modal-body">
+                    <form class="createEscrowModalForm">
+                        <div class="top-form-area d-flex justify-content-between">
+                            <div class="form-group escrow-type mr-1 w-100">
+                                <label for="escrowTypeSelectOption">I am</label>
+                                <select class="form-control" id="escrowTypeSelectOption" required>
+                                  <option selected>Please Select</option>
+                                  <option value="buy">Buying</option>
+                                  <option value="sell">Selling</option>
+                                </select>
+                            </div>
+                            <div class="form-group escrow-for ml-1 w-100">
+                                <label for="escrowForSelectOption">Product or Service:</label>
+                                <select class="form-control" id="escrowForSelectOption" required>
+                                  <option selected>Please Select</option>
+                                  <option value="product">Product</option>
+                                  <option value="service">Service</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="escrowTitle">Title of escrow payment</label>
+                            <input type="text" class="form-control" id="escrowTitle" required placeholder="Escrow Title">
+                        </div>
+                        <div class="description-dropzone-area">
+                            <div class="form-group description pb-2">
+                                <label for="escrowDescription">Description</label>
+                                <textarea class="form-control" id="escrowDescription" rows="4"></textarea>
+                            </div>
+                            <div class="dropzone pb-2">
+                                <label for="escrowDropzone">Images</label>
+                                <div id="escrowDropzone" class="js-dropzone dz-dropzone dz-dropzone-boxed gradient-overlay-half-primary-v4">
+                                    
+                                    <div class="dz-message mt-4 mt-md-2">
+                                        <figure class="max-w-4rem mx-auto mb-2">
+                                            <img class="img-fluid" src="../images/dashboard/dropzone.png" alt="Image Description">
+                                        </figure>
+                                        <p class="m-0">Drop image  here (Max. 2MB per image, max. 5 image)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group escrowAmount pb-2">
+                            <label for="escrowAmountField">Amount (BDT):</label>
+                            <input type="number" class="form-control escrowAmountField" id="escrowAmountField" required placeholder="100">
+                        </div>
+                        <div class="createEscrowRadioBtns text-center pb-2">
+                            <div class="radio-btn-header pb-2">
+                                <h4>Choose who pays the escrow fees:</h4>
+                                <p class="m-0">The fees are due upon receipt of the money.</p>
+                            </div>
+                            <div class="radio-box-wra">
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="MeRadioBtn" name="escrowRadioBtns" class="custom-control-input">
+                                    <label class="custom-control-label" for="MeRadioBtn">Me</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" checked id="50/50RadioBtns" name="escrowRadioBtns" class="custom-control-input">
+                                    <label class="custom-control-label" for="50/50RadioBtns">50/50</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="partnerRadioBtns" name="escrowRadioBtns" class="custom-control-input">
+                                    <label class="custom-control-label" for="partnerRadioBtns">Partner</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="createEscrowPaymentDetails">
+                            <div class="escrowPrice d-flex justify-content-between align-items-center">
+                                <p class="m-0 payment-details">Price:</p>
+                                <span class="d-flex justify-content-between align-items-center"><p class="m-0" id="escrowPrice">100.00</p> BDT</span>
+                            </div>
+                            <div class="escrowIGurdFee d-flex justify-content-between align-items-center">
+                                <p class="m-0 payment-details">iGurd Fee:</p>
+                                <span class="d-flex justify-content-between align-items-center"><p class="m-0" id="iGurdFee">10.00</p> BDT</span>
+                            </div>
+                            <div class="toPayTotal d-flex justify-content-between align-items-center">
+                                <p class="my-1">To pay:</p>
+                                <span class="d-flex justify-content-between align-items-center"><p class="m-0" id="toPay">110.00</p> BDT</span>
+                            </div>
+                        </div>
+                        <div class="coupon-area">
+                            <p class="m-0">
+                                <a class="coupon-btn " data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Do you have a coupon?</a>
+                            </p>
+                             <div class="collapse" id="collapseExample">
+                                <div class="card card-body coupon-body">
+                                    <form class="form-inline">
+                                        <div class="form-group mb-2">
+                                          <input type="text" class="form-control" id="couponField" placeholder="Enter coupon:">
+                                          <button type="submit" class="coupon-apply-btn">Apply</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="createEscrowModalFooter mt-2">
+                            <a href="#" class="btn createEscrowFooterNext-btn" id="createEscrowFooterNext-btn" data-toggle="modal" data-target="#invitePartnerModal" data-dismiss="modal">Next</a>
+                        </div>
+                    </form> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ======== Create Escrow Modal Ends ======= -->
+
+    
+
+    <!-- ======== Invite Business Partner Modal Starts ======= -->
+    <div id="invitePartnerModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title-area">
+                        <img src="../images/dashboard/change-pass.png" alt="">
+                        <h5 class="modal-title" id="invitePartnerModalTitle">Invite Business Partner</h5>
+                    </div>
+                <button type="button" class="btn btn-xs btn-icon" data-dismiss="modal" aria-label="Close">
+                    <img src="../images/dashboard/close.png" alt="">
+                </button>
+                </div>
+                <div class="modal-body text-center invite-partner-body">
+                    <div class="invite-partner-body-text pb-3 pt-2">
+                        <div class="invite-partner-confirmed "><p>Send the following link to your partner:</p></div>
+                        <div class="invite-partner-link" id="invite-partner-link">
+                            <p id="share-link" class="share-link">https://secure.igurd.com/links/0720OIAP?icc=0720OIAP&lang=en</p>
+                            <p class="copy-btn"><img src="../images/dashboard/copy-btn.png" alt="">Copy Link</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer invite-partner-confirmed-footer">
+                        <a type="button" class="invite-partner-close" id="invite-partner-close" href="#">Close</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ======== Invite Business Partner Modal Ends ======= -->
+
+
+
+    <!-- ======== Add Money Modal Starts ======= -->
+    <div id="addWalletMoneyModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title-area">
+                        <img src="../images/dashboard/change-pass.png" alt="">
+                        <h5 class="modal-title" id="addWalletMoneyModalTitle">Recharge Your Wallet</h5>
+                    </div>
+                <button type="button" class="btn btn-xs btn-icon" data-dismiss="modal" aria-label="Close">
+                    <img src="../images/dashboard/close.png" alt="">
+                </button>
+                </div>
+                <div class="modal-body">
+                    <form class="addWalletMoneyModalForm">
+                        <div class="form-group addMoney pb-2">
+                            <label for="addMoneyField">Amount (BDT):</label>
+                            <input type="number" class="form-control addMoneyField" id="addMoneyField" required placeholder="100">
+                        </div>
+                        
+                        <div class="addMoneyDetails">
+                            <div class="moneyAmount d-flex justify-content-between align-items-center">
+                                <p class="m-0 payment-details">Price:</p>
+                                <span class="d-flex justify-content-between align-items-center"><p class="m-0" id="amountOfMoney">100.00</p> BDT</span>
+                            </div>
+                            <div class="addMoneyFee d-flex justify-content-between align-items-center">
+                                <p class="m-0 payment-details">iGurd Fee:</p>
+                                <span class="d-flex justify-content-between align-items-center"><p class="m-0" id="iGurdFeeToAddMoney">10.00</p> BDT</span>
+                            </div>
+                            <div class="toPayTotal d-flex justify-content-between align-items-center">
+                                <p class="m-0">To pay:</p>
+                                <span class="d-flex justify-content-between align-items-center"><p class="m-0" id="toPay">110.00</p> BDT</span>
+                            </div>
+                        </div>
+                        <div class="addMoneyModalFooter mt-3">
+                            <a href="#" class="btn addMoneyFooter-btn" id="addMoneyFooter-btn" href="#" data-toggle="modal" data-target="#addMoneyConfirmation" data-dismiss="modal">Add Money</a>
+                        </div>
+                    </form> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ======== Create Escrow Modal Ends ======= -->
+
+
+
+    <!-- ======== Add Money Confirmation Modal Starts ======= -->
+    <div id="addMoneyConfirmation" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title-area">
+                        <img src="../images/dashboard/change-pass.png" alt="">
+                        <h5 class="modal-title" id="rechargeWalletModalTitle">Recharge Your Wallet</h5>
+                    </div>
+                <button type="button" class="btn btn-xs btn-icon" data-dismiss="modal" aria-label="Close">
+                    <img src="../images/dashboard/close.png" alt="">
+                </button>
+                </div>
+                <div class="modal-body text-center recharge-wallet-body">
+                    <div class="recharge-Wallet-body-text pb-3 pt-2">
+                        <div class="recharge-wallet-confirmed "><p>You successfully recharged your wallet.</p></div>
+                    </div>
+                    <div class="modal-footer invite-partner-confirmed-footer">
+                        <a type="button" class="invite-partner-close" id="invite-partner-close" href="#">Close</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ======== Add Money Confirmation Modal Ends ======= -->
+
 
       <!-- JS Global Compulsory -->
     <script src="js/jquery.min.js"></script>
@@ -457,7 +681,12 @@
     <script src="js/hs.core.js"></script>
     <script src="js/hs-unfold.min.js"></script>
     <script src="js/hs.dropzone.js"></script>
-    <script src="js/clipboard.min.js"></script>
-    <script src="js/scripts.js"></script>
+    
+    <script>
+        $(document).on('ready', function () {
+        // initialization of unfold
+        var unfold = new HSUnfold('.js-hs-unfold-invoker').init();
+        });
+    </script>
 </body>
 </html>

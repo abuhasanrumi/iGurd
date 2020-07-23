@@ -51,48 +51,27 @@
     </div>
   </header>
 
-    <div class="signup-area" id="signup-area">
+    <div class="phone-verification-area" id="phone-verification-area">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-6 col-lg-4 py-5">
+            <div class="row justify-content-center py-5">
+                <div class="col-md-4 py-5">
                     <div class="form-wrap bg-white px-5 my-5">
                         <div class="form-header text-center">
                             <div class="form-title">
-                                <h1 class="py-3 px-5" >Signup</h1>
+                                <h1 class="py-3 px-5" >Phone Verify</h1>
                             </div>
-                            <small class="pb-3 d-block">Already registered? <a data-toggle="modal" data-target="#loginFormModal">Login</a></small>
+                            <small class="pb-3 d-block">We just sent you a code to <span class="d-block" id="user-input-phone">+880 13177 2424</span></small>
+                            <small class="pb-3 d-block">Wait 1-5 Mins to request code again</small>
                         </div>
                         <div class="form-body">
                             <form>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="email-phone" aria-describedby="email-phone" placeholder="EMAIL/PHONE NUMBER">
-                                </div>
-                                <div class="form-group">
-                                    <input type="password" class="form-control" id="password" placeholder="PASSWORD">
-                                </div>
-                                <div class="form-group">
-                                    <input class="form-control" type="text" placeholder="FULL NAME">
-                                </div>
-                                <div class="form-group">
-                                    <input class="form-control" type="text" placeholder="MM/DD/YYYY" onfocus="(this.type='date')">
-                                </div>
-                                <div class="form-group">
-                                    <label for="address">Personal Address</label>
-                                    <input class="form-control" id="address" type="text" placeholder="STREET & APT NO.">
-                                </div>
-                                <div class="form-group address-wrap d-flex justify-content-between">
-                                    <input class="form-control" type="text" placeholder="ADDRESS 2">
-                                    <input class="form-control" type="text" placeholder="ZIP CODE">
-                                </div>
-                                <div class="form-group">
-                                    <input class="form-control" type="text" placeholder="CITY">
-                                </div>
-                                <div class="form-check">
-                                    <label class="control control-checkbox" for="TermsCheckbox">I agreed to the terms of service<input type="checkbox" id="TermsCheckbox"/><div class="control_indicator"></div></label>
+                                    <label for="verification-code">Please enter the code here:</label>
+                                    <input type="text" class="form-control" id="verification-code" aria-describedby="phoneVerification">
                                 </div>
                                 <div class="form-btns text-center py-3">
-                                    <a href="signup2.html" type="submit" class="btn signup-next d-block" id="signup-next">Next</a>
-                                    <button class="btn signup-cancel d-block">Cancel</button>
+                                    <a type="submit" href="Dashboard.html" class="btn complete-registration d-block" id="complete-registration">Complete Registration</a>
+                                    <button class="btn send-code-again d-block">Send verification code again</button>
                                 </div>
                             </form>
                         </div>
@@ -101,7 +80,7 @@
             </div>
         </div>
     </div>
-
+  
 
 
 

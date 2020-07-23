@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Escrow Payment - iGurd</title>
+    <title>Dashboard - iGurd</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/theme.css">
     <link rel="stylesheet" href="css/innerMaster.css">
@@ -13,11 +13,11 @@
         <div class="container">
             <nav class="d-flex justify-content-between align-items-center">
                 <div>
-                    <a href="#"><img class="logo" src="../images/innerLogo.png" alt="iGurd Logo"></a>
+                    <a href="Dashboard.html"><img class="logo" src="../images/innerLogo.png" alt="iGurd Logo"></a>
                 </div>
                 <div class="right-nav">
                     <div class="nav-links d-flex d-block justify-content-between align-items-center">
-                        <a class="single-tab active" href="#dropdownWithHref"><img src="../images/nav-icons/home.png" alt=""></a>
+                        <a class="single-tab active" href="Dashboard.html"><img src="../images/nav-icons/home.png" alt=""></a>
                         <!-- Unfold (Dropdown) -->
                         <div class="hs-unfold">
                             <a class="js-hs-unfold-invoker dropdown-toggle single-tab" href="javascript:;"
@@ -222,8 +222,8 @@
                         </div>
                     </div>
                     <div class="side-escrow-section p-4">
-                        <a href="#"> Create escrow payment</a>
-                        <a href="#"> Create deposit payment</a>
+                        <a href="#" data-toggle="modal" data-target="#createEscrowModal" data-dismiss="modal" aria-label="Close"> Create escrow payment</a>
+                        <a href="#" data-toggle="modal" data-target="#addWalletMoneyModal" data-dismiss="modal" aria-label="Close"> Create deposit payment</a>
                     </div>
                     <div class="side-other-menu p-4">
                         <a href="#">Help & FAQ</a>
@@ -486,10 +486,10 @@
     
     <script>
         $(document).on('ready', function () {
-          // initialization of unfold
-          var unfold = new HSUnfold('.js-hs-unfold-invoker').init();
+        // initialization of unfold
+        var unfold = new HSUnfold('.js-hs-unfold-invoker').init();
         });
-      </script>
+    </script>
    
 </body>
 </html>
