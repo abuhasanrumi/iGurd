@@ -57,15 +57,8 @@ $(document).ready(function(){
       }
   });
 
+
 });
 
 
-const signupButton = document.getElementById('signup-next')
-signupButton.addEventListener('click', function(){
-  const signupArea = document.getElementById('signup-area');
-  signupArea.style.display = 'none'
-
-  const verifyArea = document.getElementById('phone-verification-area')
-  verifyArea.style.display = 'block'
-})
 

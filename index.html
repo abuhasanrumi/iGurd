@@ -87,7 +87,7 @@
               <button type="submit" class="btn btn-primary my-3">Let's get started</button>
             </div>
           </div>
-          <div class="col-md-5 p-0 right-hero py-5 px-3">
+          <div class="col-md-5 p-0 right-hero py-5 px-3 d-none d-md-block">
             <p class="left-header pr-md-5">Buy and sell safely with the step-by-step processing of iGurd</p>
             <ul>
               <li><img src="images/hero-list.png">Buyer and Seller agree on price</li>
@@ -489,6 +489,7 @@
 
 
 
+
     <!-- ======== Login Form Modal Starts ======= -->
     <div id="loginFormModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
       <div class="loginFormModal modal-dialog modal-dialog-centered" role="document">
@@ -524,7 +525,37 @@
   </div>
   <!-- ======== Login Form Modal Ends ======= -->
 
-
+  <div class="fab-container">
+    <div class="fab fab-icon-holder">
+        <i class="fas fa-question"></i>
+    </div>
+    <ul class="fab-options">
+        <li>
+            <span class="fab-label">Documentation</span>
+            <div class="fab-icon-holder">
+                <i class="fas fa-file-alt"></i>
+            </div>
+        </li>
+        <li>
+            <span class="fab-label">Video Tutorials</span>
+            <div class="fab-icon-holder">
+                <i class="fas fa-video"></i>
+            </div>
+        </li>
+        <li>
+            <span class="fab-label">Live Chat</span>
+            <div class="fab-icon-holder">
+                <i class="fas fa-comments"></i>
+            </div>
+        </li>
+        <li>
+            <span class="fab-label">Feedback</span>
+            <div class="fab-icon-holder">
+                <i class="fas fa-comment-alt"></i>
+            </div>
+        </li>
+    </ul>
+</div>
 
 
   <!-- JS Global Compulsory -->
@@ -538,6 +569,17 @@
   <script src="innerPages/js/hs-unfold.min.js"></script>
   <script type="text/javascript" src="innerPages/js/scripts.js"></script>
 
+  <script>
+    const signupButton = document.getElementById('signup-next')
+    
+    signupButton.addEventListener('click', function(){
+    const signupArea = document.getElementById('signup-area');
+    signupArea.style.display = 'none'
+
+    const verifyArea = document.getElementById('phone-verification-area')
+    verifyArea.style.display = 'block'
+  })
+  </script>
 
 </body>
 </html>

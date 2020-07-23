@@ -966,9 +966,10 @@ p.left-header-title {
     font-weight: 500;
     color: #000;
 }
-small.transaction-code, small.transaction-code span, small.transaction-date, small.transaction-date span {
+small.transaction-code, small.transaction-code span, small.transaction-date, small.transaction-date span, span#transaction-time {
     font-size: 14px;
     font-weight: 500;
+    color: #666666;
 }
 a.step-by-step-link img {
     height: 18px;
