@@ -876,6 +876,8 @@ select#selector {
   border: none;
   min-width: 100px;
   font-size:  18px;
+  background: #fff;
+  border-radius: 7px;
 }
 .select-option, .product-title-area, .price-area {
   margin: 0;
