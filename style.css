@@ -574,7 +574,7 @@ footer{
 
 /* ======== Sign Up form starts here ========= */
 
-.phone-verification-area, .signup-area {
+.phone-verification-area, .signup-area, .restorePasswordArea {
   background-color: #EAE9EE;
   background: url('images/join-as-partner-bg.png');
   background-position: center;
