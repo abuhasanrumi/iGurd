@@ -809,6 +809,7 @@ select#selector {
   min-width: 100px;
   width: 100%;
   font-size: 18px;
+  background: #fff;
 }
 label.selector span, label.amount span {
   color: #000;
