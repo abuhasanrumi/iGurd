@@ -216,73 +216,6 @@ input:focus, textarea:focus, select:focus{
   outline: none !important;
   box-shadow: none !important;
 }
-.form-group span, select{
-  display: inline-block;
-  margin: 0;
-  font-weight: 500;
-  height: 45px;
-  border: none;
-  color: #293250 !important;
-  border-radius: 0;
-  border-right: .5px solid #9498A7;
-  width: 60%;
-}
-.form-inline.product-price input {
-  height: 45px;
-  width: 70%;
-  border:  none;
-}
-.form-inline.product-price input:focus {
-  outline: none !important;
-  box-shadow: none;
-}
-.form-inline.product-price {
-  background: #fff;
-  display: flex;
-}
-form.form-inline label {
-  background: #fff;
-  height: 45px;
-  border-radius: 7px 0px 0px 7px;
-  padding-left: 20px;
-  padding-right: 6px;
-}
-.form-inline.product-title input {
-  background: #fff;
-  height: 45px;
-  border: none;
-  margin: 0;
-  padding: 20px;
-  width: 100%;
-  border-radius: none;
-}
-.form-inline.product-title input:focus {
-  outline: none;
-  box-shadow: none;
-}
-.form-inline.product-price label {
-  padding: 11px 0;
-  font-weight: 500;
-  width: 30%;
-  border-left: .5px solid #9498A7;
-}
-.form-inline.product-type-option label {
-  padding: 11px 0;
-  background: #fff;
-  font-weight: 500;
-  width: 30%;
-  border-radius: 7px;
-}
-.form-inline.product-price {
-  border-radius: 0 7px 7px 0;
-  margin: 0;
-  padding: 0;
-}
-.inline-form {
-  background: #fff;
-  border-radius: 7px;
-}
-
 
 .left-hero h1 {
   color: #fff;
@@ -294,6 +227,14 @@ form.form-inline label {
   color: #fff;
   font-weight: 500;
   font-size: 18px;
+}
+.left-hero button {
+  background: #0073E5;
+  border: none;
+}
+.left-hero button:hover {
+  border: none;
+  box-shadow: none !important;
 }
 p.left-header {
   font-size: 18px;
@@ -851,3 +792,118 @@ footer{
   margin-right: 10px;
 }
 
+
+
+
+
+
+span.form-border {
+  width: 1px;
+  height: 50px;
+  background: #9498A7;
+  border: none;
+}
+select#selector {
+  height: 50px;
+  border: none;
+  min-width: 100px;
+  width: 100%;
+  font-size: 18px;
+}
+label.selector span, label.amount span {
+  color: #000;
+  font-size: 18px;
+}
+label.selector, label.amount {
+  margin: 0;
+  width: 65px;
+  text-align: center;
+}
+
+#selector {
+  box-sizing: border-box;
+}
+.product-title-area input, input#amount {
+  height: 50px;
+  border: none;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 7px;
+  font-size: 18px;
+  padding-left: 5px;
+}
+.product-title-area {
+  width: 100%;
+}
+.product-title-area input {
+  padding: 0px 15px;
+  font-size: 18px;
+}
+.inline-form.d-flex {
+  background: #fff;
+  border-radius: 7px;
+}
+.selector-area {
+  position: relative;
+  padding-left: 5px;
+  width: 100%;
+}
+span.down-arrow svg {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: .75rem;
+  stroke-width: 4px;
+  color: #002B49;
+  right: 0;
+}
+select {
+  /* for Firefox */
+  -moz-appearance: none;
+  /* for Chrome */
+  -webkit-appearance: none;
+}
+
+/* For IE10 */
+select::-ms-expand {
+  display: none;
+}
+select#selector {
+  height: 50px;
+  border: none;
+  min-width: 100px;
+  font-size:  18px;
+}
+.select-option, .product-title-area, .price-area {
+  margin: 0;
+}
+
+
+@media (max-width: 992px){
+  .inline-form.d-flex {
+    flex-direction: column;
+    background: transparent;
+  }
+  span.form-border {
+    display: none;
+  }
+  .select-option, .product-title-area, .price-area {
+    background: #fff;
+    border: none;
+    border-radius: 7px;
+    margin: 10px 0;
+}
+.fab-container {
+  bottom: 20px;
+  right: 20px;
+}
+.fab {
+  width: 50px;
+  height: 50px;
+}
+.partner-heading h2 {
+  font-size: 35px;
+}
+}
