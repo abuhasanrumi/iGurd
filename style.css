@@ -817,7 +817,7 @@ label.selector span, label.amount span {
 }
 label.selector, label.amount {
   margin: 0;
-  width: 65px;
+  width: 80px;
   text-align: center;
 }
 
