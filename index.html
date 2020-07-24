@@ -55,37 +55,50 @@
   </header>
 
   <main>
-    <div class="hero-area py-5">
-      <div class="container py-5">
-        <div class="row d-flex align-items-center">
-          <div class="col-md-7 left-hero pr-md-5 d-block py-5 px-3">
-            <h1 class="py-2">The Safest Way <span class="d-md-block">to Pay</span></h1>
-            <p class="py-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. Lorem Ipsum is simply dummy text of the printing.</p>
-            <div class="row m-0 inline-form" >
-              <div class="col-md-3 p-0 ">
-                <div class="form-inline product-type-option">
-                  <label for="inlineFormCustomSelectPref">I am</label>
-                  <select class="product-type pr-3 " id="inlineFormCustomSelectPref">
-                    <option value="buy" selected>buying</option>
-                    <option value="sell">selling</option>
-                  </select>
-                </div>
+    <div class="hero-area py-2 py-md-5">
+      <div class="container py-2 py-md-5">
+        <div class="row py-2 py-md-5  d-flex align-items-center">
+          <div class="col-md-7 left-hero pr-md-5 d-block py-2 py-md-5 px-3">
+            <h1 class="py-2 text-center text-md-left">The Safest Way <span class="d-block">to Pay</span></h1>
+            <p class="py-2 text-center text-md-left">Lorem Ipsum is text industry. Ipsum has been the industry's standard dummy text. Lorem Ipsum is simply dummy text of the printing.</p>
+            <form action="">
+              <div class="inline-form d-flex">
+                  <div class="select-option d-flex align-items-center">
+                      <label for="selector" class="selector">
+                          <span>I am</span>
+                      </label>
+                      <div class="selector-area">
+                          <select id="selector">
+                              <option value="false">buying</option>
+                              <option value="true">selling</option>
+                          </select>
+                          <span class="down-arrow">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                  <title>small down</title>
+                                  <g class="nc-icon-wrapper">
+                                      <polyline fill="none" stroke="currentColor" stroke-linecap="square" stroke-miterlimit="10" points="44,26 32,38 20,26 " stroke-linejoin="miter"></polyline>
+                                  </g>
+                              </svg>
+                          </span>
+                      </div>
+                  </div>
+                  <span class="form-border"></span>
+                  <div class="product-title-area">
+                      <input type="text" class="product-title" placeholder="Product name" value="">
+                  </div>
+                  <span class="form-border"></span>
+                  <div class="price-area d-flex align-items-center">
+                      <label for="amount" class="amount d-flex align-items-center">
+                          <span class="mx-auto">for</span>
+                      </label>
+                      <input type="text" id="amount" class="" placeholder="0000">
+                  </div>
               </div>
-              <div class="col-md-6 p-0 ">
-                <div class="form-inline product-title">
-                  <input type="text" class="form-control pl-2 pr-5" id="product-title" placeholder="Product title">
-                </div>
+              <div class="col-md-12 p-0 d-flex justify-content-end">
+                <button type="submit" class="btn btn-primary my-3">Let's get started</button>
               </div>
-              <div class="col-md-3 p-0 ">
-                <div class="form-inline product-price">
-                  <label for="product-price">for</label>
-                  <input type="number" class="form-control" id="product-price" placeholder="Price">
-                </div>
-              </div>
-            </div>
-            <div class="col-md-12 p-0 d-flex justify-content-end">
-              <button type="submit" class="btn btn-primary my-3">Let's get started</button>
-            </div>
+          </form>
+            
           </div>
           <div class="col-md-5 p-0 right-hero py-5 px-3 d-none d-md-block">
             <p class="left-header pr-md-5">Buy and sell safely with the step-by-step processing of iGurd</p>
@@ -396,22 +409,22 @@
       <div class="container">
         <div class="press-section d-flex justify-content-center">
           <div class="row justify-content-center">
-            <div class="col-md-2 col-4 d-flex align-items-center justify-content-center px-5 py-3">
+            <div class="col-md-2 col-4 d-flex align-items-center justify-content-center px-4 py-3">
               <img class="w-100" src="images/press/1.png" alt="">
             </div>
-            <div class="col-md-2 col-4 d-flex align-items-center justify-content-center px-5 py-3">
+            <div class="col-md-2 col-4 d-flex align-items-center justify-content-center px-4 py-3">
               <img class="w-100" src="images/press/2.png" alt="">
             </div>
-            <div class="col-md-2 col-4 d-flex align-items-center justify-content-center px-5 py-3">
+            <div class="col-md-2 col-4 d-flex align-items-center justify-content-center px-4 py-3">
               <img class="w-100" src="images/press/3.png" alt="">
             </div>
-            <div class="col-md-2 col-4 d-flex align-items-center justify-content-center px-5 py-3">
+            <div class="col-md-2 col-4 d-flex align-items-center justify-content-center px-4 py-3">
               <img class="w-100" src="images/press/4.png" alt="">
             </div>
-            <div class="col-md-2 col-4 d-flex align-items-center justify-content-center px-5 py-3">
+            <div class="col-md-2 col-4 d-flex align-items-center justify-content-center px-4 py-3">
               <img class="w-100" src="images/press/2.png" alt="">
             </div>
-            <div class="col-md-2 col-4 d-flex align-items-center justify-content-center px-5 py-3">
+            <div class="col-md-2 col-4 d-flex align-items-center justify-content-center px-4 py-3">
               <img class="w-100" src="images/press/3.png" alt="">
             </div>
           </div>
@@ -453,7 +466,7 @@
             <img class="w-50 mx-auto d-block" src="images/white-logo.png" alt="">
             <p class="m-0 py-4 text-white text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
           </div>
-          <div class="col-6 col-md-2 text-right text-md-center py-2">
+          <div class="col-6 col-md-2 text-center py-2">
             <ul>
               <li><a href="#">Contact Us</a></li>
               <li><a href="#">About Us</a></li>
@@ -462,7 +475,7 @@
               <li><a href="#">Terms</a></li>
             </ul>
           </div>
-          <div class="col-6 col-md-2 text-right text-md-center py-2">
+          <div class="col-6 col-md-2 text-center py-2">
             <ul>
               <li><a href="#">Contact Us</a></li>
               <li><a href="#">About Us</a></li>
@@ -471,7 +484,7 @@
               <li><a href="#">Terms</a></li>
             </ul>
           </div>
-          <div class="col-md-4 py-3">
+          <div class="col-md-4 py-3 d-none d-md-block">
             <div class="payment-partner-icons">
               <img class="w-100 mx-auto d-block px-3" src="images/payment.png" alt="">
               <img class="w-100 mx-auto d-block px-3" src="images/payment.png" alt="">
@@ -564,7 +577,7 @@
   <script type="text/javascript" src="innerPages/js/owl.carousel.min.js"></script>
   <script type="text/javascript" src="innerPages/js/bootstrap.bundle.min.js"></script>
 
-  <!-- JS Blueberry -->
+
   <script src="innerPages/js/hs.core.js"></script>
   <script src="innerPages/js/hs-unfold.min.js"></script>
   <script type="text/javascript" src="innerPages/js/scripts.js"></script>
