@@ -13,495 +13,544 @@
 </head>
 <body>
 
-  <header id="header-area" class="header-area bg-white">
-    <div class="container-fluid header-section px-2 px-md-5 d-block">
-      <div class="row d-flex align-items-center nav-height">
-        <div class="col-6 col-md-5 col-lg-2 p-lg-0">
-          <div class="logo">
-            <a href="index.html"><img class="mx-4 mx-md-3" src="images/innerLogo.png" alt=""></a>
+  <div class="index-preload-banner p-5" id="index-preload-banner">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-12 pt-5 pb-3">
+          <div class="banner-title">
+            <img class="py-3 text-center" src="images/innerLogo.png" alt="">
+            <h1 class="py-3">We have a more featureful app to fullfill your needs</h1>
           </div>
         </div>
-        <div class="p-0 d-none d-lg-block col-lg-6">
-          <nav class="nav-area">
-            <a href="#" class="nav-item pl-0">About us</a>
-            <a href="#" class="nav-item">How it works</a>
-            <a href="#" class="nav-item">Fee table</a>
-            <a href="#" class="nav-item border-right-0">Contact</a>
-          </nav>
+        <div class="col-12 d-flex justify-content-between align-items-center flex-wrap">
+          <a href="https://play.google.com/"><img class="playButton" src="images/google-play.png" alt=""></a>
+          <a href="#" id="index-page" class="d-block">Visit web instead</a>
         </div>
-        <div class="col-6 col-md-6 col-lg-4 d-none d-md-block text-right">
-          <div class="user-buttons text-right">
-            <a class="signup-btn px-2 px-md-3 py-2" href="innerPages/signup.html">Sign up</a>
-            <a class="login-btn px-3 px-md-4 py-2"  data-toggle="modal" data-target="#loginFormModal">Login</a>
-          </div>
-        </div>
+      </div>
+    </div>
+  </div>
 
-        <div class="col-6 col-md-1 d-lg-none text-right">
-          <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#" class="nav-item">About</a>
-            <a href="#" class="nav-item">Services</a>
-            <a href="#" class="nav-item">Clients</a>
-            <a href="#" class="nav-item">Contact</a>
-            <a href="innerPages/signup.html" class="nav-item d-md-none">Sign up</a>
-            <a class="nav-item d-md-none" data-toggle="modal" data-target="#loginFormModal">Login</a>
+
+
+  <div class="index-wrap" id="index-wrap">
+    <header id="header-area" class="header-area bg-white sticky-top">
+      <div class="container-fluid header-section px-2 px-md-5 d-block">
+        <div class="row d-flex align-items-center nav-height">
+          <div class="col-6 col-md-5 col-lg-2 p-lg-0">
+            <div class="logo">
+              <a href="index.html"><img class="mx-4 mx-md-3" src="images/innerLogo.png" alt=""></a>
+            </div>
           </div>
-          
-          <span class="d-flex justify-content-end align-items-center" style="font-size:30px;cursor:pointer" onclick="openNav()"><img class="hamburder-bars mx-4 mx-md-3" src="images/nav-icons/hamburger-bars.png" alt=""></span>
+          <div class="p-0 d-none d-lg-block col-lg-6">
+            <nav class="nav-area">
+              <a href="#" class="nav-item pl-0">About us</a>
+              <a href="#" class="nav-item">How it works</a>
+              <a href="#" class="nav-item">Fee table</a>
+              <a href="#" class="nav-item border-right-0">Contact</a>
+            </nav>
+          </div>
+          <div class="col-6 col-md-6 col-lg-4 d-none d-md-block text-right">
+            <div class="user-buttons text-right">
+              <a class="signup-btn px-2 px-md-3 py-2" href="innerPages/signup.html">Sign up</a>
+              <a class="login-btn px-3 px-md-4 py-2" href="innerPages/login.html">Login</a>
+            </div>
+          </div>
+  
+          <div class="col-6 col-md-1 d-lg-none text-right">
+            <div id="mySidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <a href="#" class="nav-item">About</a>
+              <a href="#" class="nav-item">Services</a>
+              <a href="#" class="nav-item">Clients</a>
+              <a href="#" class="nav-item">Contact</a>
+              <a href="innerPages/signup.html" class="nav-item d-md-none">Sign up</a>
+              <a class="nav-item d-md-none" href="innerPages/login.html">Login</a>
+            </div>
+            
+            <span class="d-flex justify-content-end align-items-center" style="font-size:30px;cursor:pointer" onclick="openNav()"><img class="hamburder-bars mx-4 mx-md-3" src="images/nav-icons/hamburger-bars.png" alt=""></span>
+          </div>
+        </div>
+        
+      </div>
+    </header>
+  
+    <main>
+      <div class="hero-area py-2 py-md-5">
+        <div class="container py-2 py-md-5">
+          <div class="row py-2 py-md-5  d-flex align-items-center">
+            <div class="col-md-7 left-hero pr-md-5 d-block py-2 py-md-5 px-3">
+              <h1 class="py-2 text-center text-md-left">The Safest Way <span class="d-block">to Pay</span></h1>
+              <p class="py-2 text-center text-md-left">Lorem Ipsum is text industry. Ipsum has been the industry's standard dummy text. Lorem Ipsum is simply dummy text of the printing.</p>
+              <form action="">
+                <div class="inline-form d-flex">
+                    <div class="select-option d-flex align-items-center">
+                        <label for="selector" class="selector">
+                            <span>I am</span>
+                        </label>
+                        <div class="selector-area">
+                            <select id="selector">
+                                <option value="false">buying</option>
+                                <option value="true">selling</option>
+                            </select>
+                            <span class="down-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                    <title>small down</title>
+                                    <g class="nc-icon-wrapper">
+                                        <polyline fill="none" stroke="currentColor" stroke-linecap="square" stroke-miterlimit="10" points="44,26 32,38 20,26 " stroke-linejoin="miter"></polyline>
+                                    </g>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                    <span class="form-border"></span>
+                    <div class="select-option d-flex align-items-center">
+                        <label for="secondSelector" class="selector secondSelector">
+                            <span>a</span>
+                        </label>
+                        <div class="selector-area second">
+                            <select id="secondSelector">
+                                <option value="false">product</option>
+                                <option value="true">service</option>
+                            </select>
+                            <span class="down-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                    <title>small down</title>
+                                    <g class="nc-icon-wrapper">
+                                        <polyline fill="none" stroke="currentColor" stroke-linecap="square" stroke-miterlimit="10" points="44,26 32,38 20,26 " stroke-linejoin="miter"></polyline>
+                                    </g>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                    <span class="form-border"></span>
+                    <div class="product-title-area">
+                        <input type="text" class="product-title" placeholder="Product name" value="">
+                    </div>
+                    <span class="form-border"></span>
+                    <div class="price-area d-flex align-items-center">
+                        <label for="amount" class="amount d-flex align-items-center">
+                            <span class="ml-auto">for</span>
+                        </label>
+                        <input type="text" id="amount" class="p-2" placeholder="0000">
+                    </div>
+                </div>
+                <div class="col-md-12 p-0 d-flex justify-content-start justify-content-md-end">
+                  <button type="submit" class="btn btn-primary my-3">Let's get started</button>
+                </div>
+            </form>
+              
+            </div>
+            <div class="col-md-5 p-0 right-hero py-5 px-3 d-none d-md-block">
+              <p class="left-header pr-md-5">Buy and sell safely with the step-by-step processing of iGurd</p>
+              <ul>
+                <li><img src="images/hero-list.png">Buyer and Seller agree on price</li>
+                <li><img src="images/hero-list.png">Buyer diposits the money</li>
+                <li><img src="images/hero-list.png">Seller hands over the goods or service</li>
+                <li><img src="images/hero-list.png">Buyer releases the money after verification</li>
+                <li><img src="images/hero-list.png">Seller receives the money in real time</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+  
+      <section class="about-area section-padding bg-white">
+        <div class="container">
+          <div class="row d-flex align-items-center">
+            <div class="col-md-6 left-about d-flex justify-content-center">
+              <img class="w-100 p-5" src="images/about-img.png" alt="">
+            </div>
+            <div class="col-md-6 right-about">
+              <h3 class="py-2">Lorem ipsum dolor sit amet.</h3>
+              <p class="py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa corporis necessitatibus suscipit fuga optio consectetur, odit obcaecati quis vitae exercitationem?</p>
+              <ul>
+                <li><img src="images/about-list.png" alt="">Lorem consectetur ea alias </li>
+                <li><img src="images/about-list.png" alt="">ipsum dolor sit amet </li>
+                <li><img src="images/about-list.png" alt="">repellat dolores possimus </li>
+                <li><img src="images/about-list.png" alt="">adipisicing elit. Sequi dicta</li>
+                <li><img src="images/about-list.png" alt="">voluptas, cum iste illum nam!</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+  
+  
+      <section class="section-padding bg-white">
+        <div class="container">
+          <h2 class="text-center section-title">This is <span class="d-block">How it Works</span></h2>
+  
+          <div class="row wrapper">
+            <div class="col-6 col-md-3">
+              <div class="single-process-card m-md-3">
+                <div class="single-process-img">
+                  <img class="w-100" src="images/process-1.png" alt="">
+                </div>
+                <h4>Transaction Created</h4>
+                <p>Buyer & Sleer agree terms and Buyer submits payment.</p>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="single-process-card m-md-3">
+                <div class="single-process-img">
+                  <img class="w-100" src="images/process-2.png" alt="">
+                </div>
+                <h4>Delivery Completed</h4>
+                <p>Seller delivers physical or digital goods or services to buyer</p>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="single-process-card m-md-3">
+                <div class="single-process-img">
+                  <img class="w-100" src="images/process-3.png" alt="">
+                </div>
+                <h4>Buyer Reviews</h4>
+                <p>Buyer approves that digital or physical goods or service.</p>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="single-process-card m-md-3">
+                <div class="single-process-img">
+                  <img class="w-100" src="images/process-4.png" alt="">
+                </div>
+                <h4>Sellers Payout</h4>
+                <p>Money is released to seller dashboard and he can make a payout request.</p>
+              </div>
+            </div>
+          </div>
+  
+  
+          <div class="row protection-info section-padding text-center d-flex justify-content-center align-items-center">
+            <div class="buyer-protection col-10 col-md-5">
+              <h4 class="protection-title py-2">Buyer Protection</h4>
+              <p>The seller does not receive the money until
+                the buyer has reveived and verified the goods
+                or service. The release must be made via the
+                iGurd account of the buyer.</p>
+              <a href="#">What happens if the seller does not deliver or
+                  if the product/service has defects?</a>
+            </div>
+            <div class="protection-icon col-md-1 my-4">
+              <img src="images/protection.png" alt="">
+            </div>
+            <div class="seller-protection col-10 col-md-5">
+              <h4  class="protection-title py-2">Seller Protection</h4>
+              <p>The buyer cannot withdraw the money
+                without the express consent of the seller. It is
+                not necessary to pass on bank details to the
+                buyer.</p>
+              <a href="#">What happens if the seller does not deliver or
+                if the product/service has defects?</a>
+            </div>
+            <div class="col-md-12 text-center">
+              <a class="index-signup" href="#">Signup for free</a>
+            </div>
+          </div>       
+        </div>
+      </section>
+
+
+      <div class="android-banner">
+        <div class="container d-flex justify-content-around flex-column flex-md-row align-items-center flex-wrap text-center">
+          <div class="banner-text ">
+            <h3 class="text-white px-3">Download our android app for all features</h3>
+          </div>
+          <div class="banner-btn py-3 d-flex justify-content-center">
+            <img src="images/google-play.png" alt="">
+          </div>
+        </div>
+      </div>
+  
+  
+      <section class="advantage-area section-padding">
+        <div class="container">
+          <h2 class="text-center section-title">Advantages for <span class="d-block">Buyers & Sellers</span></h2>
+          <div class="advantage-wrap py-4">
+            <div class="single-advantage my-3 text-center text-md-left">
+              <div class="row d-flex justify-content-center align-items-center">
+              <div class="col-md-2 mx-2 d-flex justify-content-center justify-content-md-end align-items-center">
+                <div class="advantage-img">
+                  <img src="images/advantage-1.png" alt="">
+                </div>
+              </div>
+              <div class="col-10 col-md-7">
+                <div class="advantage-text">
+                  <h5 class="my-3">SAFE & SECURE & NO ADVANCE PAYMENT RISK</h5>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>
+              </div>
+              </div>
+            </div>
+            <div class="single-advantage my-3 text-center text-md-left">
+              <div class="row d-flex justify-content-center align-items-center">
+              <div class="col-md-2 mx-2 d-flex justify-content-center justify-content-md-end  align-items-center">
+                <div class="advantage-img d-flex justify-content-center">
+                  <img src="images/advantage-2.png" alt="">
+                </div>
+              </div>
+              <div class="col-10 col-md-7">
+                <div class="advantage-text">
+                  <h5 class="my-3">FAIR & TRANSPARENT</h5>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>
+              </div>
+              </div>
+            </div>
+            <div class="single-advantage my-3 text-center text-md-left">
+              <div class="row d-flex justify-content-center align-items-center">
+              <div class="col-md-2 mx-2 d-flex justify-content-center justify-content-md-end  align-items-center">
+                <div class="advantage-img">
+                  <img src="images/advantage-3.png" alt="">
+                </div>
+              </div>
+              <div class="col-10 col-md-7">
+                <div class="advantage-text">
+                  <h5 class="my-3">24 HOUR LIVE SUPPORT</h5>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+  
+      <section class="testimonial-area section-padding text-center bg-white">
+        <div class="container">
+          <div class="testimonial-heading">
+            <h2>Testimonials</h2>
+            <p>It seems like hundreds of new iPhone apps</p>
+          </div>
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-9 my-5">
+              <div class="owl-carousel owl-theme loop portfolio-wrap">
+                <div class="item single-portfolio-item">
+                  <div class="portfolio-img">
+                    <img src="images/team/1.png" alt="">
+                  </div>
+                  <div class="portfolio-intro pt-3 pb-1">
+                    <h4>Towfiqur Rahman</h4>
+                    <p class="m-0">Developer</p>
+                  </div>
+                  <div class="portfolio-description px-2">
+                    <p>A major turning point in the history of early philosophical science was the controversial</p>
+                  </div>
+                </div>
+                <div class="item single-portfolio-item">
+                  <div class="portfolio-img">
+                    <img src="images/team/1.png" alt="">
+                  </div>
+                  <div class="portfolio-intro pt-3 pb-1">
+                    <h4>Towfiqur Rahman</h4>
+                    <p class="m-0">Developer</p>
+                  </div>
+                  <div class="portfolio-description px-2">
+                    <p>A major turning point in the history of early philosophical science was the controversial</p>
+                  </div>
+                </div>
+                <div class="item single-portfolio-item">
+                  <div class="portfolio-img">
+                    <img src="images/team/1.png" alt="">
+                  </div>
+                  <div class="portfolio-intro pt-3 pb-1">
+                    <h4>Towfiqur Rahman</h4>
+                    <p class="m-0">Developer</p>
+                  </div>
+                  <div class="portfolio-description px-2">
+                    <p>A major turning point in the history of early philosophical science was the controversial</p>
+                  </div>
+                </div>
+                <div class="item single-portfolio-item">
+                  <div class="portfolio-img">
+                    <img src="images/team/1.png" alt="">
+                  </div>
+                  <div class="portfolio-intro pt-3 pb-1">
+                    <h4>Towfiqur Rahman</h4>
+                    <p class="m-0">Developer</p>
+                  </div>
+                  <div class="portfolio-description px-2">
+                    <p>A major turning point in the history of early philosophical science was the controversial</p>
+                  </div>
+                </div>
+                <div class="item single-portfolio-item">
+                  <div class="portfolio-img">
+                    <img src="images/team/1.png" alt="">
+                  </div>
+                  <div class="portfolio-intro pt-3 pb-1">
+                    <h4>Towfiqur Rahman</h4>
+                    <p class="m-0">Developer</p>
+                  </div>
+                  <div class="portfolio-description px-2">
+                    <p>A major turning point in the history of early philosophical science was the controversial</p>
+                  </div>
+                </div>
+                <div class="item single-portfolio-item">
+                  <div class="portfolio-img">
+                    <img src="images/team/1.png" alt="">
+                  </div>
+                  <div class="portfolio-intro pt-3 pb-1">
+                    <h4>Towfiqur Rahman</h4>
+                    <p class="m-0">Developer</p>
+                  </div>
+                  <div class="portfolio-description px-2">
+                    <p>A major turning point in the history of early philosophical science was the controversial</p>
+                  </div>
+                </div>
+                <div class="item single-portfolio-item">
+                  <div class="portfolio-img">
+                    <img src="images/team/1.png" alt="">
+                  </div>
+                  <div class="portfolio-intro pt-3 pb-1">
+                    <h4>Towfiqur Rahman</h4>
+                    <p class="m-0">Developer</p>
+                  </div>
+                  <div class="portfolio-description px-2">
+                    <p>A major turning point in the history of early philosophical science was the controversial</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+  
+      <section class="partners-area section-padding">
+        <div class="container">
+          <div class="partner-section">
+            <div class="partner-heading text-center mb-5">
+              <h2>Our Partners</h2>
+            </div>
+            <div class="row d-flex justify-content-center">
+              <div class="col-md-12 carousel-btns d-flex align-items-center">
+                <div class="partnerCarousel owl-carousel owl-theme px-5 d-flex align-items-center">
+                  <div class="item partner-logo d-flex justify-content-center">
+                    <a href="#"><img src="images/partners/1.png" alt=""></a>
+                  </div>
+                  <div class="item partner-logo d-flex justify-content-center">
+                    <a href="#"><img src="images/partners/1.png" alt=""></a>
+                  </div>
+                  <div class="item partner-logo d-flex justify-content-center">
+                    <a href="#"><img src="images/partners/1.png" alt=""></a>
+                  </div>
+                  <div class="item partner-logo d-flex justify-content-center">
+                    <a href="#"><img src="images/partners/1.png" alt=""></a>
+                  </div>
+                  <div class="item partner-logo d-flex justify-content-center">
+                    <a href="#"><img src="images/partners/1.png" alt=""></a>
+                  </div>
+                  <div class="item partner-logo d-flex justify-content-center">
+                    <a href="#"><img src="images/partners/1.png" alt=""></a>
+                  </div>
+                  <div class="item partner-logo d-flex justify-content-center">
+                    <a href="#"><img src="images/partners/1.png" alt=""></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+  
+      <section class="press-area bg-white">
+        <div class="container">
+          <div class="press-section d-flex justify-content-center">
+            <div class="row justify-content-center">
+              <div class="col-md-2 col-4 d-flex align-items-center justify-content-center px-4 py-2">
+                <img class="w-100" src="images/press/1.png" alt="">
+              </div>
+              <div class="col-md-2 col-4 d-flex align-items-center justify-content-center px-4 py-2">
+                <img class="w-100" src="images/press/2.png" alt="">
+              </div>
+              <div class="col-md-2 col-4 d-flex align-items-center justify-content-center px-4 py-2">
+                <img class="w-100" src="images/press/3.png" alt="">
+              </div>
+              <div class="col-md-2 col-4 d-flex align-items-center justify-content-center px-4 py-2">
+                <img class="w-100" src="images/press/4.png" alt="">
+              </div>
+              <div class="col-md-2 col-4 d-flex align-items-center justify-content-center px-4 py-2">
+                <img class="w-100" src="images/press/2.png" alt="">
+              </div>
+              <div class="col-md-2 col-4 d-flex align-items-center justify-content-center px-4 py-2">
+                <img class="w-100" src="images/press/3.png" alt="">
+              </div>
+            </div>
+          </div>
+          <p class="text-center m-0">To the press area</p>
+        </div>
+      </section>
+  
+      <section class="sign-up-area section-padding  bg-white">
+        <div class="container ">
+          <div class="row align-items-center text-center">
+            <div class="col-md-12 col-lg-4 py-3">
+              <div class="signup-text">
+                <p class="sign-up-text m-0">Sign Up for the best deals</p>
+              </div>
+            </div>
+            <div class="col-md-8 col-lg-5 py-3">
+              <div class="signup-form">
+                <input class="form-control" type="email" placeholder="enteryouremail@gmail.com">
+              </div>
+            </div>
+            <div class="col-md-4 col-lg-3 py-3">
+              <div class="signup-btn">
+                <button class="btn">Subscribe</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+    </main>
+  
+  
+    <footer class="pt-5 pb-3">
+      <div class="container-fluid px-2 px-md-5 pb-5">
+        <div class="footer-wrap px-4">
+          <div class="row align-items-center">
+            <div class="col-sm-6">
+              <img class="white-logo d-block" src="images/white-logo.png" alt="">
+              <p class="m-0 py-4 text-white">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+            </div>
+            <div class="col-6 col-sm-3 col-md-3 col-lg-2 text-lg-center py-2">
+              <ul>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Terms</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-sm-3 col-md-3 col-lg-2 text-lg-center py-2">
+              <ul>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Terms</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-lg-4 py-3 d-none d-lg-block">
+              <div class="payment-partner-icons">
+                <img class="w-100 mx-auto d-block px-3" src="images/payment.png" alt="">
+                <img class="w-100 mx-auto d-block px-3" src="images/payment.png" alt="">
+                <img class="w-100 mx-auto d-block px-3" src="images/payment.png" alt="">
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       
-    </div>
-  </header>
-
-  <main>
-    <div class="hero-area py-2 py-md-5">
-      <div class="container py-2 py-md-5">
-        <div class="row py-2 py-md-5  d-flex align-items-center">
-          <div class="col-md-7 left-hero pr-md-5 d-block py-2 py-md-5 px-3">
-            <h1 class="py-2 text-center text-md-left">The Safest Way <span class="d-block">to Pay</span></h1>
-            <p class="py-2 text-center text-md-left">Lorem Ipsum is text industry. Ipsum has been the industry's standard dummy text. Lorem Ipsum is simply dummy text of the printing.</p>
-            <form action="">
-              <div class="inline-form d-flex">
-                  <div class="select-option d-flex align-items-center">
-                      <label for="selector" class="selector">
-                          <span>I am</span>
-                      </label>
-                      <div class="selector-area">
-                          <select id="selector">
-                              <option value="false">buying</option>
-                              <option value="true">selling</option>
-                          </select>
-                          <span class="down-arrow">
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-                                  <title>small down</title>
-                                  <g class="nc-icon-wrapper">
-                                      <polyline fill="none" stroke="currentColor" stroke-linecap="square" stroke-miterlimit="10" points="44,26 32,38 20,26 " stroke-linejoin="miter"></polyline>
-                                  </g>
-                              </svg>
-                          </span>
-                      </div>
-                  </div>
-                  <span class="form-border"></span>
-                  <div class="product-title-area">
-                      <input type="text" class="product-title" placeholder="Product name" value="">
-                  </div>
-                  <span class="form-border"></span>
-                  <div class="price-area d-flex align-items-center">
-                      <label for="amount" class="amount d-flex align-items-center">
-                          <span class="mx-auto">for</span>
-                      </label>
-                      <input type="text" id="amount" class="" placeholder="0000">
-                  </div>
-              </div>
-              <div class="col-md-12 p-0 d-flex justify-content-start justify-content-md-end">
-                <button type="submit" class="btn btn-primary my-3">Let's get started</button>
-              </div>
-          </form>
-            
-          </div>
-          <div class="col-md-5 p-0 right-hero py-5 px-3 d-none d-md-block">
-            <p class="left-header pr-md-5">Buy and sell safely with the step-by-step processing of iGurd</p>
-            <ul>
-              <li><img src="images/hero-list.png">Buyer and Seller agree on price</li>
-              <li><img src="images/hero-list.png">Buyer diposits the money</li>
-              <li><img src="images/hero-list.png">Seller hands over the goods or service</li>
-              <li><img src="images/hero-list.png">Buyer releases the money after verification</li>
-              <li><img src="images/hero-list.png">Seller receives the money in real time</li>
-            </ul>
-          </div>
-        </div>
+      <div class="col-md-12 pt-2 text-center footer-copyright d-flex justify-content-md-end justify-content-center">
+        <p class="m-0 text-white pt-2">© iGurd 2020. All Right Reserved.</p>
       </div>
-    </div>
-
-
-    <section class="about-area section-padding bg-white">
-      <div class="container">
-        <div class="row d-flex align-items-center">
-          <div class="col-md-6 left-about d-flex justify-content-center">
-            <img class="w-100 p-5" src="images/about-img.png" alt="">
-          </div>
-          <div class="col-md-6 right-about">
-            <h3 class="py-2">Lorem ipsum dolor sit amet.</h3>
-            <p class="py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa corporis necessitatibus suscipit fuga optio consectetur, odit obcaecati quis vitae exercitationem?</p>
-            <ul>
-              <li><img src="images/about-list.png" alt="">Lorem consectetur ea alias </li>
-              <li><img src="images/about-list.png" alt="">ipsum dolor sit amet </li>
-              <li><img src="images/about-list.png" alt="">repellat dolores possimus </li>
-              <li><img src="images/about-list.png" alt="">adipisicing elit. Sequi dicta</li>
-              <li><img src="images/about-list.png" alt="">voluptas, cum iste illum nam!</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-
-    <section class="section-padding bg-white">
-      <div class="container">
-        <h2 class="text-center section-title">This is <span class="d-block">How it Works</span></h2>
-
-        <div class="row wrapper">
-          <div class="col-6 col-md-3">
-            <div class="single-process-card m-md-3">
-              <div class="single-process-img">
-                <img class="w-100" src="images/process-1.png" alt="">
-              </div>
-              <h4>Transaction Created</h4>
-              <p>Buyer & Sleer agree terms and Buyer submits payment.</p>
-            </div>
-          </div>
-          <div class="col-6 col-md-3">
-            <div class="single-process-card m-md-3">
-              <div class="single-process-img">
-                <img class="w-100" src="images/process-2.png" alt="">
-              </div>
-              <h4>Delivery Completed</h4>
-              <p>Seller delivers physical or digital goods or services to buyer</p>
-            </div>
-          </div>
-          <div class="col-6 col-md-3">
-            <div class="single-process-card m-md-3">
-              <div class="single-process-img">
-                <img class="w-100" src="images/process-3.png" alt="">
-              </div>
-              <h4>Buyer Checks</h4>
-              <p>Buyer approves that digital or physical goods or service.</p>
-            </div>
-          </div>
-          <div class="col-6 col-md-3">
-            <div class="single-process-card m-md-3">
-              <div class="single-process-img">
-                <img class="w-100" src="images/process-4.png" alt="">
-              </div>
-              <h4>Seller Payout</h4>
-              <p>Money is released to seller dashboard and he can make a payout request.</p>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="row protection-info section-padding text-center d-flex justify-content-center align-items-center">
-          <div class="buyer-protection col-10 col-md-5">
-            <h4 class="protection-title py-2">Buyer Protection</h4>
-            <p>The seller does not receive the money until
-              the buyer has reveived and verified the goods
-              or service. The release must be made via the
-              iGurd account of the buyer.</p>
-            <a href="#">What happens if the seller does not deliver or
-                if the product/service has defects?</a>
-          </div>
-          <div class="protection-icon col-md-1 my-4">
-            <img src="images/protection.png" alt="">
-          </div>
-          <div class="seller-protection col-10 col-md-5">
-            <h4  class="protection-title py-2">Seller Protection</h4>
-            <p>The buyer cannot withdraw the money
-              without the express consent of the seller. It is
-              not necessary to pass on bank details to the
-              buyer.</p>
-            <a href="#">What happens if the seller does not deliver or
-              if the product/service has defects?</a>
-          </div>
-          <div class="col-md-12 text-center">
-            <a class="index-signup" href="#">Signup for free</a>
-          </div>
-        </div>       
-      </div>
-    </section>
-
-
-    <section class="advantage-area section-padding">
-      <div class="container">
-        <h2 class="text-center section-title">Advantages for <span class="d-block">Buyers & Sellers</span></h2>
-        <div class="advantage-wrap py-4">
-          <div class="single-advantage my-3 text-center text-md-left">
-            <div class="row d-flex justify-content-center align-items-center">
-            <div class="col-md-2 mx-2 d-flex justify-content-center justify-content-md-end align-items-center">
-              <div class="advantage-img">
-                <img src="images/advantage-1.png" alt="">
-              </div>
-            </div>
-            <div class="col-10 col-md-7">
-              <div class="advantage-text">
-                <h5 class="my-3">SAFE & SECURE & NO ADVANCE PAYMENT RISK</h5>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-              </div>
-            </div>
-            </div>
-          </div>
-          <div class="single-advantage my-3 text-center text-md-left">
-            <div class="row d-flex justify-content-center align-items-center">
-            <div class="col-md-2 mx-2 d-flex justify-content-center justify-content-md-end  align-items-center">
-              <div class="advantage-img d-flex justify-content-center">
-                <img src="images/advantage-2.png" alt="">
-              </div>
-            </div>
-            <div class="col-10 col-md-7">
-              <div class="advantage-text">
-                <h5 class="my-3">FAIR & TRANSPARENT</h5>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-              </div>
-            </div>
-            </div>
-          </div>
-          <div class="single-advantage my-3 text-center text-md-left">
-            <div class="row d-flex justify-content-center align-items-center">
-            <div class="col-md-2 mx-2 d-flex justify-content-center justify-content-md-end  align-items-center">
-              <div class="advantage-img">
-                <img src="images/advantage-3.png" alt="">
-              </div>
-            </div>
-            <div class="col-10 col-md-7">
-              <div class="advantage-text">
-                <h5 class="my-3">24 HOUR LIVE SUPPORT</h5>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-              </div>
-            </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <section class="testimonial-area section-padding text-center bg-white">
-      <div class="container">
-        <div class="testimonial-heading">
-          <h2>Testimonials</h2>
-          <p>It seems like hundreds of new iPhone apps</p>
-        </div>
-        <div class="row d-flex justify-content-center">
-          <div class="col-md-9 my-5">
-            <div class="owl-carousel owl-theme loop portfolio-wrap">
-              <div class="item single-portfolio-item">
-                <div class="portfolio-img">
-                  <img src="images/team/1.png" alt="">
-                </div>
-                <div class="portfolio-intro pt-3 pb-1">
-                  <h4>Towfiqur Rahman</h4>
-                  <p class="m-0">Developer</p>
-                </div>
-                <div class="portfolio-description px-2">
-                  <p>A major turning point in the history of early philosophical science was the controversial</p>
-                </div>
-              </div>
-              <div class="item single-portfolio-item">
-                <div class="portfolio-img">
-                  <img src="images/team/1.png" alt="">
-                </div>
-                <div class="portfolio-intro pt-3 pb-1">
-                  <h4>Towfiqur Rahman</h4>
-                  <p class="m-0">Developer</p>
-                </div>
-                <div class="portfolio-description px-2">
-                  <p>A major turning point in the history of early philosophical science was the controversial</p>
-                </div>
-              </div>
-              <div class="item single-portfolio-item">
-                <div class="portfolio-img">
-                  <img src="images/team/1.png" alt="">
-                </div>
-                <div class="portfolio-intro pt-3 pb-1">
-                  <h4>Towfiqur Rahman</h4>
-                  <p class="m-0">Developer</p>
-                </div>
-                <div class="portfolio-description px-2">
-                  <p>A major turning point in the history of early philosophical science was the controversial</p>
-                </div>
-              </div>
-              <div class="item single-portfolio-item">
-                <div class="portfolio-img">
-                  <img src="images/team/1.png" alt="">
-                </div>
-                <div class="portfolio-intro pt-3 pb-1">
-                  <h4>Towfiqur Rahman</h4>
-                  <p class="m-0">Developer</p>
-                </div>
-                <div class="portfolio-description px-2">
-                  <p>A major turning point in the history of early philosophical science was the controversial</p>
-                </div>
-              </div>
-              <div class="item single-portfolio-item">
-                <div class="portfolio-img">
-                  <img src="images/team/1.png" alt="">
-                </div>
-                <div class="portfolio-intro pt-3 pb-1">
-                  <h4>Towfiqur Rahman</h4>
-                  <p class="m-0">Developer</p>
-                </div>
-                <div class="portfolio-description px-2">
-                  <p>A major turning point in the history of early philosophical science was the controversial</p>
-                </div>
-              </div>
-              <div class="item single-portfolio-item">
-                <div class="portfolio-img">
-                  <img src="images/team/1.png" alt="">
-                </div>
-                <div class="portfolio-intro pt-3 pb-1">
-                  <h4>Towfiqur Rahman</h4>
-                  <p class="m-0">Developer</p>
-                </div>
-                <div class="portfolio-description px-2">
-                  <p>A major turning point in the history of early philosophical science was the controversial</p>
-                </div>
-              </div>
-              <div class="item single-portfolio-item">
-                <div class="portfolio-img">
-                  <img src="images/team/1.png" alt="">
-                </div>
-                <div class="portfolio-intro pt-3 pb-1">
-                  <h4>Towfiqur Rahman</h4>
-                  <p class="m-0">Developer</p>
-                </div>
-                <div class="portfolio-description px-2">
-                  <p>A major turning point in the history of early philosophical science was the controversial</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <section class="partners-area section-padding">
-      <div class="container">
-        <div class="partner-section">
-          <div class="partner-heading text-center mb-5">
-            <h2>Our Partners</h2>
-            <img src="images/partners.png" alt="">
-          </div>
-          <div class="row d-flex justify-content-center">
-            <div class="col-md-12 carousel-btns">
-              <div class="partnerCarousel owl-carousel owl-theme px-5">
-                <div class="item partner-logo d-flex justify-content-center">
-                  <a href="#"><img src="images/partners/1.png" alt=""></a>
-                </div>
-                <div class="item partner-logo d-flex justify-content-center">
-                  <a href="#"><img src="images/partners/1.png" alt=""></a>
-                </div>
-                <div class="item partner-logo d-flex justify-content-center">
-                  <a href="#"><img src="images/partners/1.png" alt=""></a>
-                </div>
-                <div class="item partner-logo d-flex justify-content-center">
-                  <a href="#"><img src="images/partners/1.png" alt=""></a>
-                </div>
-                <div class="item partner-logo d-flex justify-content-center">
-                  <a href="#"><img src="images/partners/1.png" alt=""></a>
-                </div>
-                <div class="item partner-logo d-flex justify-content-center">
-                  <a href="#"><img src="images/partners/1.png" alt=""></a>
-                </div>
-                <div class="item partner-logo d-flex justify-content-center">
-                  <a href="#"><img src="images/partners/1.png" alt=""></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <section class="press-area bg-white">
-      <div class="container">
-        <div class="press-section d-flex justify-content-center">
-          <div class="row justify-content-center">
-            <div class="col-md-2 col-4 d-flex align-items-center justify-content-center px-4 py-3">
-              <img class="w-100" src="images/press/1.png" alt="">
-            </div>
-            <div class="col-md-2 col-4 d-flex align-items-center justify-content-center px-4 py-3">
-              <img class="w-100" src="images/press/2.png" alt="">
-            </div>
-            <div class="col-md-2 col-4 d-flex align-items-center justify-content-center px-4 py-3">
-              <img class="w-100" src="images/press/3.png" alt="">
-            </div>
-            <div class="col-md-2 col-4 d-flex align-items-center justify-content-center px-4 py-3">
-              <img class="w-100" src="images/press/4.png" alt="">
-            </div>
-            <div class="col-md-2 col-4 d-flex align-items-center justify-content-center px-4 py-3">
-              <img class="w-100" src="images/press/2.png" alt="">
-            </div>
-            <div class="col-md-2 col-4 d-flex align-items-center justify-content-center px-4 py-3">
-              <img class="w-100" src="images/press/3.png" alt="">
-            </div>
-          </div>
-        </div>
-        <p class="text-center m-0">To the press area</p>
-      </div>
-    </section>
-
-    <section class="sign-up-area section-padding  bg-white">
-      <div class="container ">
-        <div class="row align-items-center text-center">
-          <div class="col-md-12 col-lg-4 py-3">
-            <div class="signup-text">
-              <p class="sign-up-text m-0">Sign Up for the best deals</p>
-            </div>
-          </div>
-          <div class="col-md-8 col-lg-5 py-3">
-            <div class="signup-form">
-              <input class="form-control" type="email" placeholder="enteryouremail@gmail.com">
-            </div>
-          </div>
-          <div class="col-md-4 col-lg-3 py-3">
-            <div class="signup-btn">
-              <button class="btn">Subscribe</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-
-  <footer class="pt-5 pb-3">
-    <div class="container-fluid px-2 px-md-5 pb-5">
-      <div class="footer-wrap">
-        <div class="row align-items-center">
-          <div class="col-md-4">
-            <img class="w-50 mx-auto d-block" src="images/white-logo.png" alt="">
-            <p class="m-0 py-4 text-white text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-          </div>
-          <div class="col-6 col-md-2 text-center py-2">
-            <ul>
-              <li><a href="#">Contact Us</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Service</a></li>
-              <li><a href="#">Features</a></li>
-              <li><a href="#">Terms</a></li>
-            </ul>
-          </div>
-          <div class="col-6 col-md-2 text-center py-2">
-            <ul>
-              <li><a href="#">Contact Us</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Service</a></li>
-              <li><a href="#">Features</a></li>
-              <li><a href="#">Terms</a></li>
-            </ul>
-          </div>
-          <div class="col-md-4 py-3 d-none d-md-block">
-            <div class="payment-partner-icons">
-              <img class="w-100 mx-auto d-block px-3" src="images/payment.png" alt="">
-              <img class="w-100 mx-auto d-block px-3" src="images/payment.png" alt="">
-              <img class="w-100 mx-auto d-block px-3" src="images/payment.png" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="col-md-12 pt-2 text-center footer-copyright d-flex justify-content-md-end justify-content-center">
-      <p class="m-0 text-white pt-2">© iGurd 2020. All Right Reserved.</p>
-    </div>
-  </footer>
-
-
-
+    </footer>
+  </div>
 
     <!-- ======== Login Form Modal Starts ======= -->
     <div id="loginFormModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -583,14 +632,14 @@
   <script type="text/javascript" src="innerPages/js/scripts.js"></script>
 
   <script>
-    const signupButton = document.getElementById('signup-next')
+    const visitWebBtn = document.getElementById('index-page')
     
-    signupButton.addEventListener('click', function(){
-    const signupArea = document.getElementById('signup-area');
-    signupArea.style.display = 'none'
+    visitWebBtn.addEventListener('click', function(){
+    const preloadArea = document.getElementById('index-preload-banner');
+    preloadArea.style.display = 'none'
 
-    const verifyArea = document.getElementById('phone-verification-area')
-    verifyArea.style.display = 'block'
+    const indexArea = document.getElementById('index-wrap')
+    indexArea.style.display = 'block'
   })
   </script>
 

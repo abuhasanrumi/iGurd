@@ -688,5 +688,17 @@
         var unfold = new HSUnfold('.js-hs-unfold-invoker').init();
         });
     </script>
+    <script>
+        $(document).on('ready', function () {
+          // initialization of dropzone
+          $('.dz-dropzone').each(function () {
+            var dropzone = $.HSCore.components.HSDropzone.init('#' + $(this).attr('id'));
+      
+            dropzone.on("addedfile", function() {
+              console.log('File added!!!');
+            });
+          });
+        });
+      </script>
 </body>
 </html>
