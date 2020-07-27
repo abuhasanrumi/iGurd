@@ -46,12 +46,17 @@ $(document).ready(function(){
     navText : ['<i class="fas fa-arrow-alt-circle-left"></i>','<i class="fas fa-arrow-alt-circle-right"></i>'],
     responsive:{
       0:{
-          items:1,
-      },
-      600:{
           items:2,
+          nav: 0,
       },
-      1000:{
+      500:{
+        items:3,
+        nav: 0,
+      },
+      768:{
+          items:4,
+      },
+      992:{
           items:5,
       }
       }

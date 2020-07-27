@@ -51,27 +51,26 @@
     </div>
   </header>
 
-    <div class="phone-verification-area" id="phone-verification-area">
-        <div class="container">
+    <div class="signup-area py-5" id="signup-area">
+        <div class="container py-5">
             <div class="row justify-content-center py-5">
-                <div class="col-md-4 py-5">
+                <div class="col-md-6 col-lg-4 py-5">
                     <div class="form-wrap bg-white px-5 my-5">
                         <div class="form-header text-center">
                             <div class="form-title">
-                                <h1 class="py-3 px-5" >Phone Verify</h1>
+                                <h1 class="py-3 px-5" >Login</h1>
                             </div>
-                            <small class="pb-3 d-block">We just sent you a code to <span class="d-block" id="user-input-phone">+880 13177 2424</span></small>
-                            <small class="pb-3 d-block">Wait 1-5 Mins to request code again</small>
                         </div>
                         <div class="form-body">
-                            <form>
+                            <form class="pt-3">
                                 <div class="form-group">
-                                    <label for="verification-code">Please enter the code here:</label>
-                                    <input type="text" class="form-control" id="verification-code" aria-describedby="phoneVerification">
+                                    <input type="text" class="form-control" id="email-phone" aria-describedby="email-phone" placeholder="EMAIL/PHONE NUMBER">
                                 </div>
-                                <div class="form-btns text-center py-3">
-                                    <a type="submit" href="Dashboard.html" class="btn complete-registration d-block" id="complete-registration">Complete Registration</a>
-                                    <button class="btn send-code-again d-block">Send verification code again</button>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" id="password" placeholder="PASSWORD">
+                                </div>
+                                <div class="form-btns text-center pt-0 pb-3">
+                                    <a href="Dashboard.html" type="submit" class="btn signup-next d-block" id="signup-next">Submit</a>
                                 </div>
                             </form>
                         </div>
@@ -80,7 +79,7 @@
             </div>
         </div>
     </div>
-  
+
 
 
 
