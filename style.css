@@ -88,6 +88,9 @@
 .index-preload-banner {
     display: none;
   }
+  .preloader-btn {
+    margin-right: 15px;
+}
 .banner-title img {
   width: 200px;
 }
