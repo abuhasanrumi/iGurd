@@ -43,10 +43,10 @@
           </div>
           <div class="p-0 d-none d-lg-block col-lg-6">
             <nav class="nav-area">
-              <a href="#" class="nav-item pl-0">About us</a>
-              <a href="#" class="nav-item">How it works</a>
-              <a href="innerPages/fee-calculator.html" class="nav-item">Fee Calculator</a>
-              <a href="#" class="nav-item border-right-0">Contact</a>
+              <a href="#hero-area" class="nav-item pl-0">Home</a>
+              <a href="#about-area" class="nav-item">About us</a>
+              <a href="#process-area" class="nav-item">How it works</a>
+              <a href="innerPages/fee-calculator.html" class="nav-item br-none">Fee Calculator</a>
             </nav>
           </div>
           <div class="col-6 col-md-6 col-lg-4 d-none d-md-block text-right">
@@ -59,10 +59,10 @@
           <div class="col-6 col-md-1 d-lg-none text-right">
             <div id="mySidenav" class="sidenav">
               <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-              <a href="#" class="nav-item">About</a>
-              <a href="#" class="nav-item">Services</a>
-              <a href="#" class="nav-item">Clients</a>
-              <a href="#" class="nav-item">Contact</a>
+              <a href="#hero-area" class="nav-item">Home</a>
+              <a href="#about-area" class="nav-item">About us</a>
+              <a href="#process-area" class="nav-item">How it works</a>
+              <a href="innerPages/fee-calculator.html" class="nav-item">Fee Calculator</a>
               <a href="innerPages/signup.html" class="nav-item d-md-none">Sign up</a>
               <a class="nav-item d-md-none" href="innerPages/login.html">Login</a>
             </div>
@@ -75,7 +75,7 @@
     </header>
   
     <main>
-      <div class="hero-area py-2 py-md-5">
+      <section class="hero-area py-2 py-md-5 section" id="hero-area">
         <div class="container py-2 py-md-5">
           <div class="row py-2 py-md-5  d-flex align-items-center">
             <div class="col-md-7 left-hero pr-md-5 d-block py-2 py-md-5 px-3">
@@ -135,7 +135,7 @@
                     </div>
                 </div>
                 <div class="col-md-12 p-0 d-flex justify-content-start justify-content-md-end">
-                  <button type="submit" class="btn btn-primary my-3">Let's get started</button>
+                  <a href="innerPages/login.html" type="submit" class="btn btn-primary my-3">Let's get started</a>
                 </div>
             </form>
               
@@ -152,10 +152,10 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
   
   
-      <section class="about-area section-padding bg-white">
+      <section class="about-area section-padding bg-white section" id="about-area">
         <div class="container">
           <div class="row d-flex align-items-center">
             <div class="col-md-6 left-about d-flex justify-content-center">
@@ -178,10 +178,9 @@
   
   
   
-      <section class="section-padding bg-white">
+      <section class="section-padding bg-white section" id="process-area">
         <div class="container">
           <h2 class="text-center section-title">This is <span class="d-block">How it Works</span></h2>
-  
           <div class="row wrapper">
             <div class="col-6 col-md-3">
               <div class="single-process-card m-md-3">
@@ -225,46 +224,40 @@
           <div class="row protection-info section-padding text-center d-flex justify-content-center align-items-center">
             <div class="buyer-protection col-10 col-md-5">
               <h4 class="protection-title py-2">Buyer Protection</h4>
-              <p>The seller does not receive the money until
-                the buyer has reveived and verified the goods
-                or service. The release must be made via the
-                iGurd account of the buyer.</p>
-              <a href="#">What happens if the seller does not deliver or
-                  if the product/service has defects?</a>
+              <p>The seller does not receive the money until the buyer has reveived and verified the goods or service. The release must be made via the iGurd account of the buyer.</p>
+              <a href="#">What happens if the seller does not deliver or if the product/service has defects?</a>
             </div>
             <div class="protection-icon col-md-1 my-4">
               <img src="images/protection.png" alt="">
             </div>
             <div class="seller-protection col-10 col-md-5">
               <h4  class="protection-title py-2">Seller Protection</h4>
-              <p>The buyer cannot withdraw the money
-                without the express consent of the seller. It is
-                not necessary to pass on bank details to the
+              <p>The buyer cannot withdraw the money without the express consent of the seller. It is not necessary to pass on bank details to the
                 buyer.</p>
-              <a href="#">What happens if the seller does not deliver or
-                if the product/service has defects?</a>
+              <a href="#">What happens if the seller does not deliver or if the product/service has defects?</a>
             </div>
             <div class="col-md-12 text-center">
-              <a class="index-signup" href="#">Signup for free</a>
+              <a class="index-signup" href="innerPages/signup.html">Signup for free</a>
             </div>
           </div>       
         </div>
       </section>
 
 
-      <div class="android-banner">
+      <div class="android-banner ">
         <div class="container d-flex justify-content-around flex-column flex-md-row align-items-center flex-wrap text-center">
           <div class="banner-text ">
             <h3 class="text-white px-3">Download our android app for all features</h3>
           </div>
           <div class="banner-btn py-3 d-flex justify-content-center">
-            <img src="images/google-play.png" alt="">
+            <a href="https://play.google.com" target="_blank">
+              <img src="images/google-play.png" alt=""></a>
           </div>
         </div>
       </div>
   
   
-      <section class="advantage-area section-padding">
+      <section class="advantage-area section-padding section">
         <div class="container">
           <h2 class="text-center section-title">Advantages for <span class="d-block">Buyers & Sellers</span></h2>
           <div class="advantage-wrap py-4">
@@ -318,7 +311,7 @@
       </section>
   
   
-      <section class="testimonial-area section-padding text-center bg-white">
+      <section class="testimonial-area section-padding text-center bg-white section">
         <div class="container">
           <div class="testimonial-heading">
             <h2>Testimonials</h2>
@@ -418,7 +411,7 @@
       </section>
   
   
-      <section class="partners-area section-padding">
+      <section class="partners-area section-padding section">
         <div class="container">
           <div class="partner-section">
             <div class="partner-heading text-center mb-5">
@@ -456,7 +449,7 @@
       </section>
   
   
-      <section class="press-area bg-white">
+      <section class="press-area bg-white section">
         <div class="container">
           <div class="press-section d-flex justify-content-center">
             <div class="row justify-content-center">
@@ -484,7 +477,7 @@
         </div>
       </section>
   
-      <section class="sign-up-area section-padding  bg-white">
+      <section class="sign-up-area section-padding  bg-white section">
         <div class="container ">
           <div class="row align-items-center text-center">
             <div class="col-md-12 col-lg-4 py-3">
@@ -510,33 +503,30 @@
   
   
     <footer class="pt-5 pb-3">
-      <div class="container-fluid px-2 px-md-5 pb-5">
+      <div class="container-fluid px-2 px-md-5 pb-3">
         <div class="footer-wrap px-4">
           <div class="row align-items-center">
             <div class="col-sm-6 col-lg-4">
-              <img class="white-logo d-block" src="images/white-logo.png" alt="">
+              <a href="index.html"><img class="white-logo d-block" src="images/white-logo.png" alt=""></a>
               <p class="m-0 py-4 text-white">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
             </div>
             <div class="col-6 col-sm-3 col-md-3 col-lg-2 text-lg-center py-2">
               <ul>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Service</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Terms</a></li>
+                <li><a href="#hero-area">Home</a></li>
+                <li><a href="#about-area">About us</a></li>
+                <li><a href="#process-area">How it works</a></li>
               </ul>
             </div>
             <div class="col-6 col-sm-3 col-md-3 col-lg-2 text-lg-center py-2">
               <ul>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Service</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Terms</a></li>
+                <li><a href="innerPages/fee-calculator.html">Fee Calculator</a></li>
+                <li><a href="innerPages/toc.html">Terms of Condition</a></li>
+                <li><a href="innerPages/privacy.html">Privacy Policy</a></li>
               </ul>
             </div>
-            <div class="col-6 col-lg-4 py-3 d-none d-lg-block">
-              <div class="payment-partner-icons p-5">
+            <div class="col-6 col-lg-4 d-none d-lg-block py-2">
+              <div class="payment-partner-icons p-3">
+                <h5 class="py-2">Payment Partners</h5>
                 <img class="w-100 mx-auto d-block px-3" src="images/payment.png" alt="">
                 <img class="w-100 mx-auto d-block px-3" src="images/payment.png" alt="">
                 <img class="w-100 mx-auto d-block px-3" src="images/payment.png" alt="">
@@ -552,40 +542,7 @@
     </footer>
   </div>
 
-    <!-- ======== Login Form Modal Starts ======= -->
-    <div id="loginFormModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-      <div class="loginFormModal modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-              <div class="loginFormModalHeader modal-header">
-                  <div class="modal-title-area">
-                      <h5 class="modal-title" id="ChangePassModalTitle">Login</h5>
-                  </div>
-              <button type="button" class="btn btn-xs btn-icon" data-dismiss="modal" aria-label="Close">
-                  <img src="../images/dashboard/close.png" alt="">
-              </button>
-              </div>
-              <form>
-                  <div class="modal-body">
-                      <div class="form-group">
-                          <input type="text" class="form-control" id="email-phone" placeholder="EMAIL/PHONE">
-                      </div>
-                      <div class="form-group">
-                          <input type="password" class="form-control" id="Password" placeholder="PASSWORD">
-                      </div>
-                  </div>
-                  <div class="modal-footer">
-                      <a class="btn text-white login-btn" href="innerPages/Dashboard.html" id="login-btn">Login</a>
-                  </div>
-                  <div class="below-modal-footer-links text-center pb-4">
-                      <a href="innerPages/signup.html">Create a New Account</a>
-                      <small>|</small>
-                      <a href="innerPages/restorePassword.html">Forgot Password</a>
-                  </div>
-              </form>
-          </div>
-      </div>
-  </div>
-  <!-- ======== Login Form Modal Ends ======= -->
+
 
   <div class="fab-container">
     <div class="fab fab-icon-holder">
@@ -641,6 +598,7 @@
     const indexArea = document.getElementById('index-wrap')
     indexArea.style.display = 'block'
   })
+
   </script>
 
 </body>
