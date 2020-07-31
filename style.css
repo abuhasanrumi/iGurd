@@ -141,6 +141,9 @@ nav.nav-area a {
   padding: 0 15px;
   border-right: 0.2px solid #293250;
 }
+nav.nav-area a:last-child {
+  border-right: none;
+}
 .user-buttons a {
   text-decoration: none;
   color: #293250;
@@ -601,6 +604,12 @@ footer{
 .footer-copyright {
   border-top: 1px solid #fff;
 }
+.payment-partner-icons h5 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+}
 
 /* Login Modal  */
 
@@ -612,7 +621,6 @@ footer{
   background: #fff;
 }
 #loginFormModal .modal-dialog {
-  max-width: 320px;
   padding-bottom: 1rem;
   margin: 0 auto;
 }
