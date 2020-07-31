@@ -43,7 +43,7 @@
 	           background: url('../images/join-as-partner-bg.png');
 	           background-repeat: no-repeat;
 	           background-position: top;
-	           background-size: auto;
+	           background-size: cover;
 	       }
 	       .calculation-area button {
 	           background: #0073E5;
@@ -113,16 +113,16 @@
 			</div>
 		</div>
 	</header>
-	<main class="main-area py-2 py-md-4">
+	<main class="main-area py-2 py-md-5">
 		<div class="container">
-			<div class="heading pt-4 pb-2 p-md-4">
+			<div class="heading pt-5 mt-lg-4 pb-2 p-md-4">
 				<h2 class="text-center">Fee Calculator</h2>
 			</div>
 			<div class="row">
 				<div class="col-12 col-md-6 left-side p-3">
 					<div class="left-wrap">
 						<div class="calculation-area p-2 p-md-4">
-							<div class="select-option">
+							<!-- <div class="select-option">
 								<label class="selector" for="selector"><span>Are you buying or selling?</span></label>
 								<div class="selector-area">
 									<select id="selector">
@@ -155,7 +155,7 @@
 										<polyline fill="none" points="44,26 32,38 20,26" stroke="currentColor" stroke-linecap="square" stroke-linejoin="miter" stroke-miterlimit="10"></polyline>
 									</g></svg></span>
 								</div>
-							</div>
+							</div> -->
 							<div class="price-area">
 								<label class="amount" for="amount"><span class="ml-auto">What is your amount?</span></label> <input class="p-2" id="amount" placeholder="0000" type="text">
 							</div>
@@ -198,7 +198,7 @@
 									<p class="m-0">BDT</p>
 								</div>
 							</div>
-							<div class="fee-breakdown p-4">
+							<!-- <div class="fee-breakdown p-4">
 								<div class="heading pb-3">
 									<h5>Fee Breakdown</h5>
 								</div>
@@ -236,7 +236,7 @@
 										</div>
 									</div>
 								</div>
-							</div>
+							</div> -->
 						</div>
 					</div>
 				</div>
@@ -246,25 +246,30 @@
 	<footer class="pt-4 pb-3">
         <div class="container-fluid px-2 px-md-5 pb-3">
           <div class="footer-wrap px-4">
-            <div class="row align-items-center">
-              <div class="col-sm-6 col-lg-4">
+            <div class="row align-items-start">
+              <div class="col-sm-6 col-lg-4 py-2">
                 <a href="../index.html"><img class="white-logo d-block" src="../images/white-logo.png" alt=""></a>
                 <p class="m-0 py-4 text-white">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
               </div>
-              <div class="col-6 col-sm-3 col-md-3 col-lg-2 text-lg-center py-2">
-                <ul>
-                  <li><a href="../index.html#hero-area">Home</a></li>
-                  <li><a href="../index.html#about-area">About us</a></li>
-                  <li><a href="../index.html#process-area">How it works</a></li>
-                </ul>
-              </div>
-              <div class="col-6 col-sm-3 col-md-3 col-lg-2 text-lg-center py-2">
-                <ul>
-                  <li><a href="fee-calculator.html">Fee Calculator</a></li>
-                  <li><a href="toc.html">Terms of Condition</a></li>
-                  <li><a href="privacy.html">Privacy Policy</a></li>
-                </ul>
-              </div>
+              <div class="col-sm-6 col-lg-4 py-2">
+				<h5 class="py-2 py-lg-4 text-white text-lg-center">Important Menu</h5>
+				<div class="footer-menu-wrap d-flex justify-content-between flex-wrap align-items-start ">
+					<div class="text-lg-center py-2">
+						<ul>
+						  <li><a href="../index.html#hero-area">Home</a></li>
+						  <li><a href="../index.html#about-area">About us</a></li>
+						  <li><a href="../index.html#process-area">How it works</a></li>
+						</ul>
+					  </div>
+					  <div class="col-6 text-lg-center py-2">
+						<ul>
+						  <li><a href="fee-calculator.html">Fee Calculator</a></li>
+						  <li><a href="toc.html">Terms of Service</a></li>
+						  <li><a href="privacy.html">Privacy Policy</a></li>
+						</ul>
+					  </div>
+				</div>
+			  </div>
               <div class="col-6 col-lg-4 d-none d-lg-block py-2">
                 <div class="payment-partner-icons p-3">
                   <h5 class="py-2">Payment Partners</h5>
