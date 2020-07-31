@@ -233,7 +233,7 @@ header.innerNav {
 .footer-list ul {
 	margin: 0px 30px;
 	border-top: 2px solid #002B49;
-	padding: 25px 0;
+	padding: 18px 0;
 }
 /* ========== Dashboard Area Starts from here ========= */
 
@@ -1035,7 +1035,7 @@ form .form-group {
 	position: relative;
 }
 .chat-box {
-	height: 250px;
+	height: 200px;
 	overflow-y: scroll;
 }
 .chat-box {
